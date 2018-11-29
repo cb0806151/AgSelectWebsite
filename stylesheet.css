@@ -1,12 +1,12 @@
 body {
-	background-color: gray;
+	background-color: rgba(105, 97, 97, 0.2);
 	padding: 0px;
 	margin: 0px;
 }
 
+
 header {
 	background-color: white;
-	height: 100px;
 	position: fixed;
 	z-index: 10;
 	top: 0px;
@@ -28,13 +28,34 @@ header {
 #logo {
 	max-height: 90px;
 	display: flex;
+	position:relative;
+	transition:2s
 }
+
+#navbar {
+  overflow: hidden;
+  
+  background-color: white;
+  border:green 2px solid;
+  transition: 1.2s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  padding: 30px 10px 30px 10px;
+  
+}
+
+.navBox{position:relative; transition: 0.9s}
+
+.carousel, .item, .active{height:100%; width:100%}
+.container{width:100%;}
 
 nav {
 	display: inline-flex;
  	justify-content: center;
  	align-items: center;
-	height: 100px;
+	
 	width: 45%;
 	float: right;
 	background-color: white;
@@ -42,7 +63,8 @@ nav {
 	padding-left: 20px;
 }
 
-nav a {
+nav a 
+{
 	display: inline-flex;
 	justify-content: center;
  	align-items: center;
@@ -69,14 +91,17 @@ nav a:hover {
 	text-align: center;
 	flex-direction: column;
 	text-align: center;
+	position: relative;
+	line-height:20px;
 	float: right;
-	height: 100px;
+	font-size:1.1em;
 	background-color: white;
 	border-style: solid;
 	border-width: 0px 0px 0px 2px;
 	border-color: lightgray;
 	padding-right: 20px;
 	padding-left: 20px;
+	transition: 0.9s
 }
 
 #ContactUsBox p {
@@ -110,6 +135,7 @@ nav a:hover {
 #page-container {
 	position: relative;
 	min-height: 100vh;
+	margin-top:175px
 }
 
 #content-wrap {

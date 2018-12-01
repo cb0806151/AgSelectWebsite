@@ -5,12 +5,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" href="stylesheet.css">
 	<title>AgSelect</title>
 </head>
 
 <body>
-	<header id="navbar">
+	<header id="navbar" class="home">
 		<div id="LogoContainer">
 			<img id="logo" src="images/AgSelectLogo.png" alt="logo for AgSelect">
 
@@ -21,9 +22,9 @@
 			<div id="BookAppointment">-Book an appointment-</div>
 		</div>
 		<nav>
-			<a id="SelectedNav" class="navBox">About Us</a>
+			<a href="index.html" id="SelectedNav" class="navBox">About Us</a>
 			<a class="navBox">How We Select</a>
-			<a class="navBox">Our Products</a>
+			<a href="products.html" class="navBox">Our Products</a>
 			<a class="navBox">Contact Us</a>
 			<a class="navBox">Our Articles</a>
 		</nav>
@@ -83,7 +84,8 @@
 
 			</p>
 			<p class="inputText">
-				Please don't be shy if you choose to use the form and tell us about yourself. It will make everything easier if you can provide us with good and specific information.
+				Please don't be shy if you choose to use the form and tell us about yourself. It will make everything easier if you
+				can provide us with good and specific information.
 
 			</p>
 			<p class="inputText">
@@ -100,12 +102,13 @@
 					<input class="submit" type="submit" value="Contact">
 				</form>
 				<div class="textFlex">
-				<b style="font-size:1.5em; margin-top:30px">If you prefer face to face contact, <i>don't worry,</i> we encourage it!</b><br>
-				<p>We'd love to meet any of our customers!</p>
-				<b style="font-size:1.5em; text-align: center; margin-top:30px">Mid-America Food Hub and Traning Center </b>
-				<p>103 Harris Street, Pilot Grove, Missouri 65276, United States</p>
-				<b style="font-size: 1.5em; text-align: center; margin-top:30px">Availability</b>
-				<p>Open Monday-Friday from 9:00 am - 5:00 pm</p>
+					<b style="font-size:1.5em; margin-top:30px">If you prefer face to face contact, <i>don't worry,</i> we encourage
+						it!</b><br>
+					<p>We'd love to meet any of our customers!</p>
+					<b style="font-size:1.5em; text-align: center; margin-top:30px">Mid-America Food Hub and Traning Center </b>
+					<p>103 Harris Street, Pilot Grove, Missouri 65276, United States</p>
+					<b style="font-size: 1.5em; text-align: center; margin-top:30px">Availability</b>
+					<p>Open Monday-Friday from 9:00 am - 5:00 pm</p>
 				</div>
 			</div>
 		</div>
@@ -171,7 +174,20 @@
 				}
 			}
 		}
+
+
+		
+		$(window).scroll(function () {
+			if ($(window).scrollTop() >= -1000) {
+				$("#navbar").fadeIn("fast");
+			}
+			else {
+				$("#navbar").fadeOut("fast");
+			}
+		});
 	</script>
+
+
 </body>
 
 </html>

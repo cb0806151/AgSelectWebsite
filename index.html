@@ -13,11 +13,11 @@
 	<header id="navbar">
 		<div id="LogoContainer">
 			<img id="logo" src="images/AgSelectLogo.png" alt="logo for AgSelect">
-			
+
 		</div>
 		<div id="ContactUsBox">
 			<p>AgSelect@GreenFundLLC.com</p>
-			<p>(888) 888-88888</p>
+			<p>(660) 672-8515</p>
 			<div id="BookAppointment">-Book an appointment-</div>
 		</div>
 		<nav>
@@ -46,24 +46,21 @@
 						<div class="item active">
 							<img src="images/drinksup.png" alt="Los Angeles" style="width:100%;">
 							<div class="carousel-caption">
-								<h3>Los Angeles</h3>
-								<p>LA is always so much fun!</p>
+
 							</div>
 						</div>
 
 						<div class="item">
 							<img src="images/fruit.jpg" alt="Chicago" style="width:100%;">
 							<div class="carousel-caption">
-								<h3>Chicago</h3>
-								<p>Thank you, Chicago!</p>
+
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="images/agselect.jpg" alt="New York" style="width:100%;">
+							<img src="images/morefruit.jpg" alt="New York" style="width:100%;">
 							<div class="carousel-caption">
-								<h3>New York</h3>
-								<p>We love the Big Apple!</p>
+
 							</div>
 						</div>
 
@@ -80,7 +77,37 @@
 					</a>
 				</div>
 			</div>
+			<h1 class="inputHeader">Interested in working with AgSelect?</h1>
+			<p class="inputText">
+				Great! The best way to work with us is by contacting us. This can be in person or through the form below.
 
+			</p>
+			<p class="inputText">
+				Please don't be shy if you choose to use the form and tell us about yourself. It will make everything easier if you can provide us with good and specific information.
+
+			</p>
+			<p class="inputText">
+				Anything left out can be taken care of once we've come into contact.
+			</p>
+			<div class="book">
+				<form action="/action_page.php">
+					<b>Tell us about youself!</b><br>
+					<input type="text" name="Name" placeholder="Name"><br>
+					<input type="email" name="email" placeholder="Email-Address"><br>
+					<input type="tel" name="PhoneNumber" placeholder="Phone Number"><br>
+					<textarea rows="6" cols="61" placeholder="What should we know about you?"></textarea>
+
+					<input class="submit" type="submit" value="Contact">
+				</form>
+				<div class="textFlex">
+				<b style="font-size:1.5em; margin-top:30px">If you prefer face to face contact, <i>don't worry,</i> we encourage it!</b><br>
+				<p>We'd love to meet any of our customers!</p>
+				<b style="font-size:1.5em; text-align: center; margin-top:30px">Mid-America Food Hub and Traning Center </b>
+				<p>103 Harris Street, Pilot Grove, Missouri 65276, United States</p>
+				<b style="font-size: 1.5em; text-align: center; margin-top:30px">Availability</b>
+				<p>Open Monday-Friday from 9:00 am - 5:00 pm</p>
+				</div>
+			</div>
 		</div>
 		<footer>
 			<div id="ParentCompanyLogoContainer">
@@ -92,7 +119,7 @@
 			<div id="FooterInfo">
 				<p>AgSelect@GreenFundLLC.com</p>
 				<i>|</i>
-				<p>(888) 888-88888</p>
+				<p>(660) 672-8515</p>
 				<i>|</i>
 				<p>Book an appointment</p>
 				<i>|</i>
@@ -106,8 +133,8 @@
 		window.onscroll = function () { scrollFunction() };
 
 		function scrollFunction() {
-			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-				
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 65.5) {
+
 				document.getElementById("logo").style.height = "60px";
 				document.getElementById("logo").style.bottom = "30px";
 				document.getElementById("ContactUsBox").style.lineHeight = "3px";
@@ -120,14 +147,13 @@
 				document.getElementsByTagName("NAV")[0].style.marginTop = "-20px";
 				var x = document.getElementsByClassName("navBox");
 				var i;
-				for (i = 0; i < x.length; i++) 
-				{
+				for (i = 0; i < x.length; i++) {
 					x[i].style.height = "50px";
 				}
-				
+
 			} else {
 				document.getElementById("navbar").style.padding = "30px 10px 30px 10px";
-				
+
 				document.getElementById("logo").style.height = "90px"
 				document.getElementById("logo").style.bottom = "0px";
 				document.getElementById("ContactUsBox").style.lineHeight = "20px";
@@ -140,8 +166,7 @@
 				document.getElementsByTagName("NAV")[0].style.marginTop = "0px";
 				var x = document.getElementsByClassName("navBox");
 				var i;
-				for (i = 0; i < x.length; i++) 
-				{
+				for (i = 0; i < x.length; i++) {
 					x[i].style.height = "100px";
 				}
 			}

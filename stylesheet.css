@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(0, 132, 3);
+	background-color: none;
 	padding: 0px;
 	margin: 0px;
 }
@@ -42,6 +42,7 @@ header {
   z-index: 99;
   padding: 30px 10px 30px 10px;
   transition: 1s;
+  outline: 100px solid rgba(100, 100, 100, 0);
   transition-property: height;
   height: 160px;
 }
@@ -52,10 +53,11 @@ header {
 	height: 100px;
 }
 
-.carousel, .item, .active{height:90vh; width:100%}
+.carousel, .item, .active{height:85vh; width:100%}
 .container{
 	width:100%;
 	padding: 0px;
+	margin-top: -70px;
 }
 
 nav {
@@ -151,8 +153,72 @@ nav a:hover {
 	padding-bottom: 100px;
 }
 
+.book{margin:80px 0px 35px 0px; display:flex; justify-content:space-between}
+textarea
+{
+	resize:none;
+	margin:0px 0px 10px 0px;
+	font-size:1.3em;
+	border:2px solid lightgray;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.textFlex
+{
+	display:flex;
+	flex-direction: column;
+}
+ .textFlex p
+{
+	font-size: 1.3em;
+	text-align: center
+}
+ .book b{font-size:1.7em;}
+.inputHeader
+{
+	font-size:3.2em;
+	font-weight: bold;
+	text-align: center;
+}
+ .inputText
+{
+	font-size:2em;
+	margin-top:60px;
+	font-weight: bold;
+	text-align: center
+}
+input
+{
+	margin:0px 0px 10px 0px;
+	font-size:1.3em;
+	height:60px;
+	border:2px solid lightgray;
+	border-radius: 10px;
+	width:45vw
+}
+input:hover
+{
+	background-color:rgba(214, 206, 206, 0.3)
+}
+textarea:hover{background-color:rgba(214, 206, 206, 0.3)}
+.submit
+{
+	height:30px;
+	background-color:rgb(0, 132, 3);
+	color:white;
+	position: relative;
+	left:28%;
+	width:40%;
+}
+ .submit:hover
+{
+	background-color:rgba(0,132,3,0.9);
+}
+
+
 footer {
 	background-color: white;
+	border:solid 2px green;
 	color: black;
 	position: absolute;
 	height: 108px;

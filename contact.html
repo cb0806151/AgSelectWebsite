@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<title>AgSelect</title>
+</head>
+
+<body>
+	<header id="navbar">
+		<div id="LogoContainer">
+			<img id="logo" src="images/AgSelectLogo.png" alt="logo for AgSelect">
+			
+		</div>
+		<div id="ContactUsBox">
+			<p>AgSelect@GreenFundLLC.com</p>
+			<p>(888) 888-88888</p>
+			<div id="BookAppointment">-Book an appointment-</div>
+		</div>
+		<nav>
+			<a class="navBox" href="index.html">About Us</a>
+			<a class="navBox">How We Select</a>
+			<a class="navBox">Our Products</a>
+			<a id="SelectedNav" class="navBox" href="contact.html">Contact Us</a>
+			<a class="navBox">Our Articles</a>
+		</nav>
+	</header>
+	<div id="page-container">
+		<div id="content-wrap">
+
+
+			<div id="ContactUsBar">
+				<div id="CUPhone">Phone<br>(888) 888-88888</div>
+				<div id="CUEmail">Email<br>AgSelect@GreenFundLLC.com</div>
+				<div id="CUSocial"><i class="fab fa-facebook-square"></i><i class="fab fa-twitter-square"></i><i class="fab fa-instagram"></i></div>
+			</div>
+
+			<div id="CenteringContainer">
+				<div id="OperationsBox">
+					<h2>Our Areas of Operation</h2>
+					<img src="images/ModifiedMap.png" alt="an image of the states AgSelect operates in"/>
+				</div>
+
+				<div id="BookAppointmentContainer">
+					<h2>~ Book an Appointment ~</h2>
+					<p>To discuss pricing, available products, and more</p>
+					<input placeholder="Name"/>
+					<input placeholder="Email address"/>
+					<textarea placeholder="Message"></textarea>
+				</div>
+
+				<div id="AppointmentHoursBox">
+					<h2>Our Available Meeting Hours</h2>
+					<p>Mon 9:00 am - 7:00 pm</p>
+					<p>Tue 9:00 am - 7:00 pm</p>
+					<p>Wed 9:00 am - 7:00 pm</p>
+					<p>Thu 9:00 am - 7:00 pm</p>
+					<p>Fri 9:00 am - 7:00 pm</p>
+					<p>Sat 5:00 am - 7:00 pm</p>
+					<p>Sun Closed</p>
+				</div>
+			</div>
+
+
+
+
+
+
+
+		</div>
+		<footer>
+			<div id="ParentCompanyLogoContainer">
+				<p>Our parent company</p>
+				<a href="https://greenfundsolutions.com" target="_blank"><img id="ParentCompanyLogo" src="images/GreenFundLLCLogo.png"
+					 alt="logo for GreenFundLLC" /></a>
+				<p>Copyright © 2018 Green Fund - All Rights Reserved.</p>
+			</div>
+			<div id="FooterInfo">
+				<p>AgSelect@GreenFundLLC.com</p>
+				<i>|</i>
+				<p>(888) 888-88888</p>
+				<i>|</i>
+				<p>Book an appointment</p>
+				<i>|</i>
+				<p>Copyright © 2018 AgSelect - All Rights Reserved.</p>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+				
+				document.getElementById("logo").style.height = "60px";
+				document.getElementById("logo").style.bottom = "30px";
+				document.getElementById("ContactUsBox").style.lineHeight = "3px";
+				document.getElementById("ContactUsBox").style.fontSize = ".9em";
+				document.getElementById("ContactUsBox").style.bottom = "0px";
+				document.getElementById("ContactUsBox").style.marginTop = "-15px";
+				document.getElementById("ContactUsBox").style.height = "50px";
+				document.getElementById("BookAppointment").style.padding = "7px";
+				document.getElementById("navbar").style.height = "80px";
+				document.getElementsByTagName("NAV")[0].style.marginTop = "-20px";
+				var x = document.getElementsByClassName("navBox");
+				var i;
+				for (i = 0; i < x.length; i++) 
+				{
+					x[i].style.height = "50px";
+				}
+				
+			} else {
+				document.getElementById("navbar").style.padding = "30px 10px 30px 10px";
+				
+				document.getElementById("logo").style.height = "90px"
+				document.getElementById("logo").style.bottom = "0px";
+				document.getElementById("ContactUsBox").style.lineHeight = "20px";
+				document.getElementById("ContactUsBox").style.fontSize = "1.1em";
+				document.getElementById("ContactUsBox").style.bottom = "-0.3px";
+				document.getElementById("ContactUsBox").style.marginTop = "0px";
+				document.getElementById("ContactUsBox").style.height = "100px";
+				document.getElementById("BookAppointment").style.padding = "7px";
+				document.getElementById("navbar").style.height = "160px";
+				document.getElementsByTagName("NAV")[0].style.marginTop = "0px";
+				var x = document.getElementsByClassName("navBox");
+				var i;
+				for (i = 0; i < x.length; i++) 
+				{
+					x[i].style.height = "100px";
+				}
+			}
+		}
+	</script>
+</body>
+
+</html>

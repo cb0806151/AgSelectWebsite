@@ -58,6 +58,7 @@ header {
 	width:100%;
 	padding: 0px;
 	margin-top: -70px;
+	border: 2px rgb(0, 132, 3) solid
 }
 
 nav {
@@ -146,6 +147,7 @@ nav a:hover {
 #page-container {
 	position: relative;
 	min-height: 100vh;
+	
 	margin-top:160px
 }
 
@@ -153,11 +155,19 @@ nav a:hover {
 	padding-bottom: 100px;
 }
 
+.bodyText
+{
+	font-size:3.3em;
+	text-align:center;
+	margin:60px 0px 60px 0px;
+	
+}
+
 .book{margin:80px 0px 35px 0px; display:flex; justify-content:space-between}
 textarea
 {
 	resize:none;
-	margin:0px 0px 10px 0px;
+	margin:0px 0px 10px 10px;
 	font-size:1.3em;
 	border:2px solid lightgray;
 	border-radius: 10px;
@@ -173,7 +183,7 @@ textarea
 	font-size: 1.3em;
 	text-align: center
 }
- .book b{font-size:1.7em;}
+ .book b{font-size:1.7em; color:rgb(0, 132, 3)}
 .inputHeader
 {
 	font-size:3.2em;
@@ -189,7 +199,7 @@ textarea
 }
 input
 {
-	margin:0px 0px 10px 0px;
+	margin:0px 0px 10px 10px;
 	font-size:1.3em;
 	height:60px;
 	border:2px solid lightgray;

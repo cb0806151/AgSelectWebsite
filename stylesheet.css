@@ -403,3 +403,46 @@ footer {
 }
 
 
+
+
+
+#blogBlock {
+	text-align: center;
+	margin-bottom: 10px;
+	background-color: rgb(220, 220, 220);
+}
+
+.blogPosts {
+	width: 33%;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	margin-bottom: 5px;
+}
+
+.blogPosts img {
+	width: 100%;
+}
+
+.blogPosts p {
+	width: 100%;
+	text-align: center;
+}
+
+.articleLink {
+	color: #337ab7;
+    text-decoration: none;
+    padding: 10px;
+    transition-property: background-color, color;
+	transition-duration: 1s;
+}
+
+.articleLink:hover {
+	color: white;
+	text-decoration: underline;
+	background-color: rgb(0, 132, 3);
+	padding: 10px;
+}
+

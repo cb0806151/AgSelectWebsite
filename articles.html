@@ -5,13 +5,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 	<link rel="stylesheet" href="stylesheet.css">
 	<title>AgSelect</title>
 </head>
 
 <body>
-	<header id="navbar" class="home">
+	<header id="navbar">
 		<div id="LogoContainer">
 			<img id="logo" src="images/AgSelectLogo.png" alt="logo for AgSelect">
 
@@ -22,95 +21,56 @@
 			<div id="BookAppointment">-Book an appointment-</div>
 		</div>
 		<nav>
-			<a id="SelectedNav" class="navBox" href="index.html">About Us</a>
+			<a class="navBox" href="index.html">About Us</a>
 			<a class="navBox" href="selection.html">How We Select</a>
 			<a class="navBox" href="products.html">Our Products</a>
 			<a class="navBox" href="contact.html">Contact Us</a>
-			<a class="navBox" href="articles.html">Our Articles</a>
+			<a id="SelectedNav" class="navBox" href="articles.html">Our Articles</a>
 		</nav>
 	</header>
 	<div id="page-container">
 		<div id="content-wrap">
 
-			<div class="container">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-
-						<div class="item active">
-							<img src="images/drinksup.png" alt="Los Angeles" style="width:100%;">
-							<div class="carousel-caption">
-
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="images/fruit.jpg" alt="Chicago" style="width:100%;">
-							<div class="carousel-caption">
-
-							</div>
-						</div>
-
-						<div class="item">
-							<img src="images/morefruit.jpg" alt="New York" style="width:100%;">
-							<div class="carousel-caption">
-
-							</div>
-						</div>
-
-					</div>
-
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right"></span>
-						<span class="sr-only">Next</span>
-					</a>
+			<div id="blogBlock">
+				<div class="blogPosts">
+					<h3>Finding the Finest Tequila in Mexico</h3>
+					<img src="images/39404688_309699286274387_541941610519199744_o.jpg" alt="A picture of the Mexico countryside"/>
+					<p>It was quite a trek, but eventually we found a distillery in southwest Mexico that uses only...</p>
+					<p class="articleLink">Read More</p>
+				</div>
+				<div class="blogPosts">
+					<h3>The Holy Grail (of Retail)</h3>
+					<img src="images/39748419_312723072638675_8287161770116644864_n.jpg" alt="A picture of the Mexico countryside"/>
+					<p>Here is a few stories of the sought after products we've been able to find for our clients...</p>
+					<p class="articleLink">Read More</p>		
+				</div>
+				<div class="blogPosts">
+					<h3>The Local Premium Selection</h3>
+					<img src="images/39118163_307012486543067_8018804628550320128_o.jpg" alt="A picture of the Mexico countryside"/>
+					<p>Have a look at a few of the premium products we've found in Missouri...</p>
+					<p class="articleLink">Read More</p>
+				</div>
+				<div class="blogPosts">
+					<h3>Finding the Finest Tequila in Mexico</h3>
+					<img src="images/morefruit.jpg" alt="A picture of the Mexico countryside"/>
+					<p>It was quite a trek, but eventually we found a distillery in southwest Mexico that uses only...</p>
+					<p class="articleLink">Read More</p>
+				</div>
+				<div class="blogPosts">
+					<h3>The Local Premium Selection</h3>
+					<img src="images/drinks.jpg" alt="A picture of the Mexico countryside"/>
+					<p>Have a look at a few of the premium products we've found in Missouri...</p>
+					<p class="articleLink">Read More</p>
+				</div>
+				<div class="blogPosts">
+					<h3>The Holy Grail (of Retail)</h3>
+					<img src="images/drinksup.png" alt="A picture of the Mexico countryside"/>
+					<p>Here is a few stories of the sought after products we've been able to find for our clients...</p>
+					<p class="articleLink">Read More</p>		
 				</div>
 			</div>
-			<h1 class="inputHeader">Interested in working with AgSelect?</h1>
-			<p class="inputText">
-				Great! The best way to work with us is by contacting us. This can be in person or through the form below.
 
-			</p>
-			<p class="inputText">
-				Please don't be shy if you choose to use the form and tell us about yourself. It will make everything easier if you
-				can provide us with good and specific information.
 
-			</p>
-			<p class="inputText">
-				Anything left out can be taken care of once we've come into contact.
-			</p>
-			<div class="book">
-				<form action="/action_page.php">
-					<b>Tell us about youself!</b><br>
-					<input type="text" name="Name" placeholder="Name"><br>
-					<input type="email" name="email" placeholder="Email-Address"><br>
-					<input type="tel" name="PhoneNumber" placeholder="Phone Number"><br>
-					<textarea rows="6" cols="61" placeholder="What should we know about you?"></textarea>
-
-					<input class="submit" type="submit" value="Contact">
-				</form>
-				<div class="textFlex">
-					<b style="font-size:1.5em; margin-top:30px">If you prefer face to face contact, <i>don't worry,</i> we encourage
-						it!</b><br>
-					<p>We'd love to meet any of our customers!</p>
-					<b style="font-size:1.5em; text-align: center; margin-top:30px">Mid-America Food Hub and Traning Center </b>
-					<p>103 Harris Street, Pilot Grove, Missouri 65276, United States</p>
-					<b style="font-size: 1.5em; text-align: center; margin-top:30px">Availability</b>
-					<p>Open Monday-Friday from 9:00 am - 5:00 pm</p>
-				</div>
-			</div>
 		</div>
 		<footer>
 			<div id="ParentCompanyLogoContainer">
@@ -174,20 +134,7 @@
 				}
 			}
 		}
-
-
-		
-		$(window).scroll(function () {
-			if ($(window).scrollTop() >= -1000) {
-				$("#navbar").fadeIn("fast");
-			}
-			else {
-				$("#navbar").fadeOut("fast");
-			}
-		});
 	</script>
-
-
 </body>
 
 </html>

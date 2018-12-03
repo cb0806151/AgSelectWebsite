@@ -53,13 +53,18 @@ header {
 	height: 100px;
 }
 
-.carousel, .item, .active{height:750px; width:100%}
+.carousel, .item, .active{height:750px; width:98vw}
 .container{
 	width:100%;
 	padding: 0px;
 	margin-top: -70px;
 	border: 2px rgb(0, 132, 3) solid
 }
+
+.carousel-caption {
+	background-color: rgba(200, 200, 200, 0.5);
+	font-size: 30px;
+}	
 
 nav {
 	display: inline-flex;
@@ -146,7 +151,10 @@ nav a:hover {
 
 #page-container {
 	position: relative;
-	min-height: 70vh;
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	
 	margin-top:160px
 }

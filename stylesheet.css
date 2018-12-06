@@ -549,6 +549,14 @@ footer {
 	border:5px rgb(0, 132, 3) ridge
 }
 
+	.navbar-toggle {
+		display: none;
+	}
+
+	#buttonBox {
+		display: none;
+	}
+
 @media screen and (max-width: 1741px)
 {
 	.productHorz img
@@ -658,8 +666,19 @@ footer {
 	}
 
 	.navbar-toggle {
-		background-color: black;
+		display: flex;
+		background-color: white;
 		position: fixed;
+		border: 1px solid rgb(0, 132, 3);
+	}
+
+	#buttonBox {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 100px;
+		height: 100px;
+		float: right;
 	}
 
 	.navbar-collapse {

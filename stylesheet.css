@@ -665,28 +665,27 @@ footer {
 }
 
 @media (min-width: 768px) {
-	#content-wrap .container .navbar-collapse {
+	#page-container #content-wrap .navbar-collapse {
 		display: none !important;
 	}	
 }
 
 
 @media (max-width: 1000px) and (min-width: 768px) {
-	#content-wrap .container .navbar-collapse {
+	#page-container #content-wrap .navbar-collapse {
 		display: none !important;
 		margin-right: -15px;
 		margin-left: -15px;
 	}
 	
-	#content-wrap .container .in {
+	#page-container #content-wrap .in {
 		display: block !important;
 	}
 	
-	#content-wrap .container .collapsing {
+	#page-container #content-wrap .collapsing {
 		display: block !important;
 	}
 	
-	#
 }
 
 
@@ -733,7 +732,7 @@ footer {
 		background-color: rgb(0, 132, 3);
 		z-index: 100;
 		transition: margin-top 1s, height .35s ease;
-		margin-top: 68px;
+		margin-top: 0px;
 		width: 105%;
 	}
 

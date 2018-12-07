@@ -28,10 +28,24 @@
 			<a id="SelectedNav" class="navBox" href="contact.html">Contact Us</a>
 			<a class="navBox" href="articles.html">Our Articles</a>
 		</nav>
+		<div id="buttonBox">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                  
+        </button>
+    	</div>
 	</header>
 	<div id="page-container">
 		<div id="content-wrap">
 
+				<div class="collapse navbar-collapse" id="myNavbar">
+			      <ul class="navbar-nav">
+			        <li></li>
+			        <li></li>
+			        <li></li>
+			      </ul>
+			    </div>
 
 			<div id="ContactUsBar">
 				<div id="CUPhone">Phone<br>(833) 697-6649</div>
@@ -91,52 +105,7 @@
 		</footer>
 	</div>
 
-	<script>
-		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-		window.onscroll = function () { scrollFunction() };
-
-		function scrollFunction() {
-			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-				
-				document.getElementById("logo").style.height = "60px";
-				document.getElementById("logo").style.bottom = "30px";
-				document.getElementById("ContactUsBox").style.lineHeight = "3px";
-				document.getElementById("ContactUsBox").style.fontSize = ".9em";
-				document.getElementById("ContactUsBox").style.bottom = "0px";
-				document.getElementById("ContactUsBox").style.marginTop = "-15px";
-				document.getElementById("ContactUsBox").style.height = "50px";
-				document.getElementById("BookAppointment").style.padding = "7px";
-				document.getElementById("navbar").style.height = "80px";
-				document.getElementsByTagName("NAV")[0].style.marginTop = "-20px";
-				var x = document.getElementsByClassName("navBox");
-				var i;
-				for (i = 0; i < x.length; i++) 
-				{
-					x[i].style.height = "50px";
-				}
-				
-			} else {
-				document.getElementById("navbar").style.padding = "30px 10px 30px 10px";
-				
-				document.getElementById("logo").style.height = "90px"
-				document.getElementById("logo").style.bottom = "0px";
-				document.getElementById("ContactUsBox").style.lineHeight = "20px";
-				document.getElementById("ContactUsBox").style.fontSize = "1.1em";
-				document.getElementById("ContactUsBox").style.bottom = "-0.3px";
-				document.getElementById("ContactUsBox").style.marginTop = "0px";
-				document.getElementById("ContactUsBox").style.height = "100px";
-				document.getElementById("BookAppointment").style.padding = "7px";
-				document.getElementById("navbar").style.height = "160px";
-				document.getElementsByTagName("NAV")[0].style.marginTop = "0px";
-				var x = document.getElementsByClassName("navBox");
-				var i;
-				for (i = 0; i < x.length; i++) 
-				{
-					x[i].style.height = "100px";
-				}
-			}
-		}
-	</script>
+	<script src="CollapsibleNav.js"></script>
 </body>
 
 </html>

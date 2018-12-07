@@ -40,8 +40,6 @@
 	</header>
 	<div id="page-container">
 		<div id="content-wrap">
-			<div class="container">
-
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 			      <ul class="navbar-nav">
@@ -51,7 +49,7 @@
 			      </ul>
 			    </div>
 
-
+			<div class="container">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
@@ -138,79 +136,7 @@ Please don't be shy if you choose to use the form and tell us about yourself. It
 		</footer>
 	</div>
 
-	<script>
-		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-		window.onscroll = function () { scrollFunction() };
-
-		function scrollFunction() {
-			console.log(window.innerWidth);
-			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 65.5) {
-
-				document.getElementById("logo").style.height = "60px";
-				document.getElementById("logo").style.bottom = "30px";
-				document.getElementById("ContactUsBox").style.lineHeight = "3px";
-				document.getElementById("ContactUsBox").style.fontSize = ".9em";
-				document.getElementById("ContactUsBox").style.bottom = "0px";
-				document.getElementById("ContactUsBox").style.marginTop = "-15px";
-				document.getElementById("ContactUsBox").style.height = "50px";
-				document.getElementById("BookAppointment").style.padding = "7px";
-				document.getElementById("navbar").style.height = "80px";
-				document.getElementById("buttonBox").style.height = "50px"
-				document.getElementById("buttonBox").style.marginTop = "-15px";
-				document.getElementsByClassName("navbar-collapse")[0].style.marginTop = "-13px";
-				document.getElementsByTagName("NAV")[0].style.marginTop = "-20px";
-				var x = document.getElementsByClassName("navBox");
-				var i;
-				for (i = 0; i < x.length; i++) {
-					x[i].style.height = "50px";
-				}
-
-				if (window.innerWidth < 630) {
-					document.getElementById("buttonBox").style.justifyContent = "flex-end";
-					document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-165px";
-				}
-
-			} else {
-				document.getElementById("navbar").style.padding = "30px 10px 30px 10px";
-				document.getElementById("logo").style.height = "90px"
-				document.getElementById("logo").style.bottom = "0px";
-				document.getElementById("ContactUsBox").style.lineHeight = "20px";
-				document.getElementById("ContactUsBox").style.fontSize = "1.1em";
-				document.getElementById("ContactUsBox").style.bottom = "-0.3px";
-				document.getElementById("ContactUsBox").style.marginTop = "0px";
-				document.getElementById("ContactUsBox").style.height = "100px";
-				document.getElementById("BookAppointment").style.padding = "7px";
-				document.getElementById("navbar").style.height = "160px";
-				document.getElementsByTagName("NAV")[0].style.marginTop = "0px";
-				document.getElementById("buttonBox").style.height = "100px"
-				document.getElementById("buttonBox").style.marginTop = "0px";
-				document.getElementsByClassName("navbar-collapse")[0].style.marginTop = "68px";
-				var x = document.getElementsByClassName("navBox");
-				var i;
-				for (i = 0; i < x.length; i++) {
-					x[i].style.height = "100px";
-				}
-
-				if (window.innerWidth < 630) {
-					document.getElementById("buttonBox").style.justifyContent = "center";
-					document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-55px";
-				}
-			}
-		}
-
-
-		
-		$(window).scroll(function () {
-			if ($(window).scrollTop() >= -1000) {
-				$("#navbar").fadeIn("fast");
-			}
-			else {
-				$("#navbar").fadeOut("fast");
-			}
-		});
-	</script>
-
-
+	<script src="CollapsibleNav.js"></script>
 </body>
 
 </html>

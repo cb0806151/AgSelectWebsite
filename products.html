@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="CollapsibleNav.js"></script>
 </head>
 
 <body>
@@ -30,12 +31,26 @@
             <a class="navBox" href="contact.html">Contact Us</a>
             <a class="navBox" href="articles.html">Our Articles</a>
         </nav>
+        <div id="buttonBox">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
     </header>
     <div id="page-container">
         <div id="content-wrap">
+                <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="navbar-nav">
+                          <li></li>
+                          <li></li>
+                          <li></li>
+                        </ul>
+                      </div>
             <!--<div class="productHeader"></div>-->
             <div class="productContainer">
-                
+
                 <h1>Our Products</h1>
                 <div class="productHorz">
                     <div class="productVert">
@@ -56,7 +71,8 @@
                             <img src="images/prem.jpg" alt="fruit">
                             <div class="productVert">
                                 <b>Local Organic</b>
-                                <p>Our focus is to bring superior products to the market while creating new farm jobs in cutting edge agriculture.</p>
+                                <p>Our focus is to bring superior products to the market while creating new farm jobs
+                                    in cutting edge agriculture.</p>
                             </div>
                         </div>
                     </div>
@@ -65,14 +81,16 @@
                             <img src="images/label.jpg" alt="fruit">
                             <div class="productVert">
                                 <b>Local Premium Products</b>
-                                <p>The core of our mission is to promote new agriculture jobs as well as assist individual producers distribute their premium products</p>
+                                <p>The core of our mission is to promote new agriculture jobs as well as assist
+                                    individual producers distribute their premium products</p>
                             </div>
                         </div>
                         <div class="productHorz">
                             <img src="images/grass.jpg" alt="fruit">
                             <div class="productVert">
                                 <b>Private Label</b>
-                                <p>We visit the producer locations to ensure the product you purchase is of the highest quality
+                                <p>We visit the producer locations to ensure the product you purchase is of the highest
+                                    quality
                                 </p>
                             </div>
                         </div>
@@ -107,61 +125,7 @@
 
 
 
-        <script>
-            // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-            window.onscroll = function () { scrollFunction() };
-
-            function scrollFunction() {
-                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 25) {
-
-                    document.getElementById("logo").style.height = "60px";
-                    document.getElementById("logo").style.bottom = "30px";
-                    document.getElementById("ContactUsBox").style.lineHeight = "3px";
-                    document.getElementById("ContactUsBox").style.fontSize = ".9em";
-                    document.getElementById("ContactUsBox").style.bottom = "0px";
-                    document.getElementById("ContactUsBox").style.marginTop = "-15px";
-                    document.getElementById("ContactUsBox").style.height = "50px";
-                    document.getElementById("BookAppointment").style.padding = "7px";
-                    document.getElementById("navbar").style.height = "80px";
-                    document.getElementsByTagName("NAV")[0].style.marginTop = "-20px";
-                    var x = document.getElementsByClassName("navBox");
-                    var i;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.height = "50px";
-                    }
-
-                } else {
-                    document.getElementById("navbar").style.padding = "30px 10px 30px 10px";
-
-                    document.getElementById("logo").style.height = "90px"
-                    document.getElementById("logo").style.bottom = "0px";
-                    document.getElementById("ContactUsBox").style.lineHeight = "20px";
-                    document.getElementById("ContactUsBox").style.fontSize = "1.1em";
-                    document.getElementById("ContactUsBox").style.bottom = "-0.3px";
-                    document.getElementById("ContactUsBox").style.marginTop = "0px";
-                    document.getElementById("ContactUsBox").style.height = "100px";
-                    document.getElementById("BookAppointment").style.padding = "7px";
-                    document.getElementById("navbar").style.height = "160px";
-                    document.getElementsByTagName("NAV")[0].style.marginTop = "0px";
-                    var x = document.getElementsByClassName("navBox");
-                    var i;
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.height = "100px";
-                    }
-                }
-            }
-
-
-
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > -10000000) {
-                    $("#navbar").fadeIn("fast");
-                }
-                else {
-                    $("#navbar").fadeOut("fast");
-                }
-            });
-        </script>
+     
 </body>
 
 </html>

@@ -249,6 +249,7 @@ footer {
 	color: black;
 	position: absolute;
 	height: 108px;
+	margin-top:0px;
 	width: 100%;
 	bottom: 0vh;
 }
@@ -772,25 +773,26 @@ textarea
 
 
 @media (min-width: 768px) {
-	#content-wrap .container .navbar-collapse {
+
+	#page-container #content-wrap .navbar-collapse {
 		display: none !important;
 	}	
 }
 
 
 @media (max-width: 1000px) and (min-width: 768px) {
-	#content-wrap .container .navbar-collapse {
+
+	#page-container #content-wrap .in {
+		display: block !important;
+	}
+	#page-container #content-wrap .collapsing {
+		display: block !important;
+	}
+
+	#page-container #content-wrap .navbar-collapse {
 		display: none !important;
 		margin-right: -15px;
 		margin-left: -15px;
-	}
-	
-	#content-wrap .container .in {
-		display: block !important;
-	}
-	
-	#content-wrap .container .collapsing {
-		display: block !important;
 	}
 	
 	

@@ -40,6 +40,8 @@
 	</header>
 	<div id="page-container">
 		<div id="content-wrap">
+			<div class="container">
+
 
 				<div class="collapse navbar-collapse" id="myNavbar">
 			      <ul class="navbar-nav">
@@ -49,7 +51,7 @@
 			      </ul>
 			    </div>
 
-			<div class="container">
+
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
@@ -78,8 +80,8 @@ Interested in working with AgSelect? Great! The best way to work with us is by c
 						<div class="item">
 							<img src="images/39404688_309699286274387_541941610519199744_o.jpg" alt="New York" style="width:100%;">
 							<div class="carousel-caption">
-Please don't be shy if you choose to use the form and tell us about yourself. It will make everything easier if you
-				can provide us with good and specific information. Anything left out can be taken care of once we've come into contact.
+Don't be shy if you choose to use the form and tell us about yourself. It will make everything easier if you
+				can provide us with good and specific information. 
 							</div>
 						</div>
 
@@ -107,12 +109,12 @@ Please don't be shy if you choose to use the form and tell us about yourself. It
 					<input class="submit" type="submit" value="Contact">
 				</form>
 				<div class="textFlex">
-					<b style="font-size:2.2em; margin-top:30px">If you prefer face to face contact, <i>don't worry,</i> we encourage
+					<b>If you prefer face to face contact, <i>don't worry,</i> we encourage
 						it!</b><br>
 					<p>We'd love to meet any of our customers!</p>
-					<b style="font-size:2.2em; text-align: center; margin-top:30px">Mid-America Food Hub and Traning Center </b>
+					<b>Mid-America Food Hub and Traning Center </b>
 					<p>103 Harris Street, Pilot Grove, Missouri 65276, United States</p>
-					<b style="font-size: 2.2em; text-align: center; margin-top:30px">Availability</b>
+					<b>Availability</b>
 					<p>Open Monday-Friday from 9:00 am - 5:00 pm</p>
 				</div>
 			</div>
@@ -136,7 +138,66 @@ Please don't be shy if you choose to use the form and tell us about yourself. It
 		</footer>
 	</div>
 
-	<script src="CollapsibleNav.js"></script>
+	<script>
+		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 65.5) {
+
+				document.getElementById("logo").style.height = "60px";
+				document.getElementById("logo").style.bottom = "30px";
+				document.getElementById("ContactUsBox").style.lineHeight = "3px";
+				document.getElementById("ContactUsBox").style.fontSize = ".9em";
+				document.getElementById("ContactUsBox").style.bottom = "0px";
+				document.getElementById("ContactUsBox").style.marginTop = "-15px";
+				document.getElementById("ContactUsBox").style.height = "50px";
+				document.getElementById("BookAppointment").style.padding = "7px";
+				document.getElementById("navbar").style.height = "80px";
+				document.getElementById("buttonBox").style.marginTop = "-48px";
+				document.getElementsByClassName("navbar-collapse")[0].style.marginTop = "-13px";
+				document.getElementsByTagName("NAV")[0].style.marginTop = "-20px";
+				var x = document.getElementsByClassName("navBox");
+				var i;
+				for (i = 0; i < x.length; i++) {
+					x[i].style.height = "50px";
+				}
+
+			} else {
+				document.getElementById("navbar").style.padding = "30px 10px 30px 10px";
+				document.getElementById("logo").style.height = "90px"
+				document.getElementById("logo").style.bottom = "0px";
+				document.getElementById("ContactUsBox").style.lineHeight = "20px";
+				document.getElementById("ContactUsBox").style.fontSize = "1.1em";
+				document.getElementById("ContactUsBox").style.bottom = "-0.3px";
+				document.getElementById("ContactUsBox").style.marginTop = "0px";
+				document.getElementById("ContactUsBox").style.height = "100px";
+				document.getElementById("BookAppointment").style.padding = "7px";
+				document.getElementById("navbar").style.height = "160px";
+				document.getElementsByTagName("NAV")[0].style.marginTop = "0px";
+				document.getElementById("buttonBox").style.marginTop = "-10px";
+				document.getElementsByClassName("navbar-collapse")[0].style.marginTop = "68px";
+				var x = document.getElementsByClassName("navBox");
+				var i;
+				for (i = 0; i < x.length; i++) {
+					x[i].style.height = "100px";
+				}
+			}
+		}
+
+
+		
+		$(window).scroll(function () {
+			if ($(window).scrollTop() >= -1000) {
+				$("#navbar").fadeIn("fast");
+			}
+			else {
+				$("#navbar").fadeOut("fast");
+			}
+		});
+	</script>
+
+
 </body>
 
 </html>

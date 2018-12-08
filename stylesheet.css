@@ -770,35 +770,6 @@ textarea
 
 }
 
-
-
-@media (min-width: 768px) {
-
-	#page-container #content-wrap .navbar-collapse {
-		display: none !important;
-	}	
-}
-
-
-@media (max-width: 1000px) and (min-width: 768px) {
-
-	#page-container #content-wrap .in {
-		display: block !important;
-	}
-	#page-container #content-wrap .collapsing {
-		display: block !important;
-	}
-
-	#page-container #content-wrap .navbar-collapse {
-		display: none !important;
-		margin-right: -15px;
-		margin-left: -15px;
-	}
-	
-	
-}
-
-
 @media (max-width:494px)
 {
 	
@@ -808,6 +779,35 @@ textarea
 		font-size:9px
 	}
 }
+
+.navbar-toggle {
+	margin: 0px;
+}
+
+@media (min-width: 768px) {
+	#page-container #content-wrap .navbar-collapse {
+		display: none !important;
+	}	
+}
+
+
+@media (max-width: 1000px) and (min-width: 768px) {
+	#page-container #content-wrap .navbar-collapse {
+		display: none !important;
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	
+	#page-container #content-wrap .in {
+		display: block !important;
+	}
+	
+	#page-container #content-wrap .collapsing {
+		display: block !important;
+	}
+	
+}
+
 
 
 
@@ -830,17 +830,17 @@ textarea
 		background-color: white;
 		position: fixed;
 		border: 1px solid rgb(0, 132, 3);
+		margin-top: ;
 	}
 
 	#buttonBox {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		transition: margin-top 1s;
+		transition: margin-top 1s, height 1s;
 		width: 100px;
 		height: 100px;
 		float: right;
-		margin-top: -10px;
 	}
 
 	.icon-bar {
@@ -852,7 +852,45 @@ textarea
 		background-color: rgb(0, 132, 3);
 		z-index: 100;
 		transition: margin-top 1s, height .35s ease;
-		margin-top: 68px;
+		margin-top: 0px;
 		width: 105%;
 	}
+
+}
+
+@media screen and (max-width: 630px) {
+
+	#LogoContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+		width: 100%;
+		margin-top: -20px;
+	}
+
+	#logo {
+		z-index: 300;
+	}
+
+	#ContactUsBox {
+		display: none;
+		width: 100%;
+		border: none;
+		padding: 0px;
+	}
+
+
+	#buttonBox {
+		width: 100%;
+		height: 80px;
+		justify-content: center;
+	}
+
+	.navbar-toggle {
+		margin-top: -35px;
+		transition: margin-top 1s
+		
+	}
+
 }

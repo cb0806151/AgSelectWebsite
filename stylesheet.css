@@ -55,7 +55,7 @@ header {
 	height: 100px;
 }
 
-.carousel, .item, .active{height:750px; width:98vw}
+.carousel, .item, .active{height:750px; width:98vw;}
 .container{
 	width:100%;
 	padding: 0px;
@@ -233,13 +233,13 @@ input:hover
 textarea:hover{background-color:rgba(214, 206, 206, 0.3)}
 .submit
 {
-	height:30px;
-	font-size:1.4em;
+	height:10vh;
+	font-size:2.1vw;
 	background-color:rgb(0, 132, 3);
 	color:white;
 	position: relative;
 	left:10%;
-	width:40%;
+	width:30%;
 }
  .submit:hover
 {
@@ -788,14 +788,25 @@ textarea
 
 }
 
-@media (max-width:494px)
+@media (max-width:560px)
 {
 	
-	.carousel,.item,.active{height:399x; width:100vw}
+	.carousel,.item,.active{height:33vh; width:98vw}
 	.carousel-caption
 	{
 		font-size:9px
 	}
+}
+
+@media (max-width:469px)
+{
+	.carousel,.item,.active{height:25vh; width:100%}
+	.carousel-caption
+	{
+		font-size:9px
+	}
+
+	.book{margin-bottom: 70px;}
 }
 
 #buttonBox {
@@ -893,13 +904,40 @@ textarea
 }
 
 
+@media screen and (max-width: 755px)
+{
 
+	.textFlex b{font-size:3vw; text-align: center; margin-top:30px}
+	.textFlex p{font-size:2.5vw; text-align: center; margin-top:30px}
+	.book b{font-size:3.5vw}
+
+form
+{
+	margin-right:15px
+}
+input
+{
+	
+	height:60px;
+	font-size: 1em;
+	width:25vw
+}
+.textFlex b{ text-align: center}
+
+textarea
+{
+	font-size:1em;
+	height:110px;
+	width:25vw;
+}
+
+}
 
 @media screen and (max-width: 1000px) {
 	nav {
 		display: none;
 	}
-	
+	.submit{font-size:3vw; width:20vw}
 	.navbar-nav li {
 		float: none;
 	}

@@ -35,7 +35,9 @@ header {
 #navbar {
   overflow: hidden;
   background-color: white;
-  border:green 2px solid;
+  border: rgb(0, 132, 3) 2px solid;
+  border-radius: 0px 0px 60px 60px;
+  border-top: white 2px solid;
   position: fixed;
   width: 100%;
   top: 0;
@@ -87,9 +89,10 @@ nav a
 	text-align: center;
 	transition-property: background-color, color;
 	transition-duration: 1s;
-	
+	border-radius: 60px;
 	padding-left: 10px;
 	padding-right: 10px;
+	margin-right: 15px;
 }
 
 nav a:hover {
@@ -139,6 +142,7 @@ nav a:hover {
 	transition-property: background-color, color, padding;
 	transition-duration: 1s;
 	color: #337ab7;
+	border-radius: 60px;
 }
 
 #BookAppointment:hover {
@@ -161,7 +165,7 @@ nav a:hover {
 }
 
 #content-wrap {
-	padding-bottom: 100px;
+	padding-bottom: 270px;
 }
 
 .bodyText
@@ -245,39 +249,53 @@ textarea:hover{background-color:rgba(214, 206, 206, 0.3)}
 
 footer {
 	background-color: white;
-	border:solid 2px green;
+	border:solid 2px rgb(0, 132, 3);;
+	border-radius: 60px 60px 0px 0px;
+	border-bottom: white 2px solid;
 	color: black;
 	position: absolute;
-	height: 108px;
 	margin-top:0px;
 	width: 100%;
 	bottom: 0vh;
 }
 
 #FooterInfo {
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
  	align-items: center;
-	width: 70%;
+ 	flex-direction: column;
+	width: 100%;
 	float: right;
+	margin-bottom: 10px;
 }
 
 #FooterInfo p {
-	display: inline-flex;
+	display: flex;
 	justify-content: center;
  	align-items: center;
-	margin: 0px;
-	height: 100px;
+ 	border: 2px solid rgb(0, 132, 3);
+	border-radius: 60px;
+ 	background-color: white;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
+	color: #337ab7;
+	transition-property: background-color, color;
+	transition-duration: 1s;
+}
 
+#FooterInfo p:hover {
+	background-color: rgb(0, 132, 3);
+	color: white;
+	text-decoration: underline;
 }
 
 #ParentCompanyLogoContainer {
 	text-align: center;
 	display: block;
-	width: 350px;
-	float: left;
+	width: 100%;
 }
 
 #ParentCompanyLogoContainer a {
@@ -780,9 +798,71 @@ textarea
 	}
 }
 
+#buttonBox {
+	display: none;
+}
+
 .navbar-toggle {
 	margin: 0px;
+	display: none;
 }
+
+.navbar-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.navbar-collapse {
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.navbar-nav li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+
+.navbar-nav li a {
+	display: flex;
+	justify-content: center;
+ 	align-items: center;
+ 	list-style-type: none;
+ 	border: 2px solid white;
+	border-radius: 60px;
+ 	background-color: rgb(0, 132, 3);
+	margin: 5px;
+	padding: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: white;
+	transition-property: background-color, color;
+	transition-duration: 1s;
+	height: 30px;
+	width: 100%;
+	min-width: 200px;
+	max-width: 300px;
+}
+
+.navbar-nav li a:hover {
+	background-color: white;
+	color: rgb(0, 132, 3);
+	text-decoration: underline;
+}
+
+#SelectedDropdownNav {
+	background-color: white;
+	color: rgb(0, 132, 3);
+	text-decoration: underline;
+}
+
+
 
 @media (min-width: 768px) {
 	#page-container #content-wrap .navbar-collapse {
@@ -805,6 +885,10 @@ textarea
 	#page-container #content-wrap .collapsing {
 		display: block !important;
 	}
+
+	.navbar-toggle {
+		margin-top: 0px;
+	}
 	
 }
 
@@ -821,7 +905,12 @@ textarea
 	}
 	
 	.navbar-nav {
-		margin: 0px;
+		float: none;
+		padding: 0px;
+		background-color: rgb(0, 132, 3);
+		width: 84%;
+		margin: auto;
+		border-radius: 30px;
 	}
 	
 	.navbar-toggle {
@@ -830,7 +919,7 @@ textarea
 		background-color: white;
 		position: fixed;
 		border: 1px solid rgb(0, 132, 3);
-		margin-top: ;
+		margin-top: 0px;
 	}
 
 	#buttonBox {
@@ -838,7 +927,7 @@ textarea
 		align-items: center;
 		justify-content: center;
 		transition: margin-top 1s, height 1s;
-		width: 100px;
+		width: 70px;
 		height: 100px;
 		float: right;
 	}
@@ -849,11 +938,12 @@ textarea
 	
 	.navbar-collapse {
 		position: fixed;
-		background-color: rgb(0, 132, 3);
 		z-index: 100;
 		transition: margin-top 1s, height .35s ease;
 		margin-top: 0px;
-		width: 105%;
+		width: 100vw;
+		right: 0px;
+		margin-left: 0px;
 	}
 
 }
@@ -887,7 +977,7 @@ textarea
 		justify-content: center;
 	}
 
-	.navbar-toggle {
+	#buttonBox .navbar-toggle {
 		margin-top: -35px;
 		transition: margin-top 1s
 		

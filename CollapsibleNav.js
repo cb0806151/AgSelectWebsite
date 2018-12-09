@@ -1,17 +1,21 @@
-				if (window.innerWidth < 630 ) {
-					if (navigator.userAgent.indexOf("Chrome") != -1) {
-					document.getElementById("buttonBox").style.justifyContent = "center";
-					document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-20px";
-					} else {
-					document.getElementById("buttonBox").style.justifyContent = "center";
-					document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-35px";
+				function onLoadFunctions() {
+
+					if (window.innerWidth < 630 ) {
+						if (navigator.userAgent.indexOf("Chrome") != -1) {
+						document.getElementById("buttonBox").style.justifyContent = "center";
+						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-20px";
+						} else {
+						//document.getElementById("buttonBox").style.justifyContent = "center";
+						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-35px";
+						}
 					}
-				}
+ 
+  				}
+  				window.onload = onLoadFunctions;
 
 		window.onscroll = function () { scrollFunction() };
 
 		function scrollFunction() {
-			console.log(window.innerWidth);
 			if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 65.5) {
 
 				document.getElementById("logo").style.height = "60px";
@@ -37,10 +41,17 @@
 					if (navigator.userAgent.indexOf("Chrome") != -1) {
 						document.getElementById("buttonBox").style.justifyContent = "flex-end";
 						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-80px";
+						document.getElementsByClassName("navbar-toggle")[0].style.marginLeft = "-20px";
 					} else {
 						document.getElementById("buttonBox").style.justifyContent = "flex-end";
 						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-165px";
+						document.getElementsByClassName("navbar-toggle")[0].style.marginRight = "20px";
+
 					}
+				} else {
+					document.getElementById("buttonBox").style.justifyContent = "center";
+					document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "0px";
+					document.getElementsByClassName("navbar-toggle")[0].style.marginRight = "0px";
 				}
 
 			} else {
@@ -68,14 +79,45 @@
 					if (navigator.userAgent.indexOf("Chrome") != -1) {
 					document.getElementById("buttonBox").style.justifyContent = "center";
 					document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-30px";
+					document.getElementsByClassName("navbar-toggle")[0].style.marginLeft = "0px";
 					} else {
 					document.getElementById("buttonBox").style.justifyContent = "center";
 					document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-55px";
+					document.getElementsByClassName("navbar-toggle")[0].style.marginRight = "0px";
 					}
 				}
 			}
 		}
 
+
+		$(window).resize(function() {
+			if (window.innerWidth >= 630 ) {
+				document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "0px";
+				document.getElementsByClassName("navbar-toggle")[0].style.marginRight = "0px";
+				document.getElementsByClassName("navbar-toggle")[0].style.marginLeft = "0px";
+				document.getElementById("buttonBox").style.justifyContent = "center";
+			} else {
+				if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 65.5) {
+					if (navigator.userAgent.indexOf("Chrome") != -1) {
+						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-80px";
+					} else {
+						document.getElementById("buttonBox").style.justifyContent = "flex-end";
+						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-165px";
+						document.getElementsByClassName("navbar-toggle")[0].style.marginRight = "20px";
+					}
+				} else {
+					if (navigator.userAgent.indexOf("Chrome") != -1) {
+						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-30px";
+						document.getElementsByClassName("navbar-toggle")[0].style.marginLeft = "0px";
+					} else {
+						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-55px";
+						document.getElementsByClassName("navbar-toggle")[0].style.marginRight = "0px";
+					}
+				}
+
+
+			}
+		});
 
 		
 		$(window).scroll(function () {

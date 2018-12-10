@@ -316,7 +316,9 @@ footer {
 	margin: auto;
 }
 
-
+#SelectionContainer {
+	margin-bottom: 40px;
+}
 
 
 
@@ -337,37 +339,42 @@ footer {
 	width: 100%;
 	background-color: rgb(220, 220, 220);
 	display: inline-flex;
-	flex-direction: row;
 	justify-content: center;
  	align-items: center;
- 	height: 100px;
+ 	flex-direction: row;
 }
 
 #ContactUsBar div {
-	margin: 10px;
+	margin: 5px;
 	background-color: white;
-	height: 50px;
+	height: 80px;
 	display: flex;
 	justify-content: center;
  	align-items: center;
  	text-align: center;
+ 	padding: 20px;
+ 	border-radius: 60px;
 }
 
 #CUPhone {
-	width: 25%;
+	width: 30%;
+	font-size: 3vw;
 }
 
 #CUEmail {
 	width: 40%;
+	font-size: 2vw;
 }
 
 #CUSocial {
-	width: 25%;
+	width: 12%;
+	font-size: 1vw;
 }
 
 #CUSocial i {
-	transform: scale(2);
-	width: 22%;
+	transform: scale(3);
+	margin: 15px;
+	width: 25%;
 }
 
 #CenteringContainer {
@@ -379,17 +386,21 @@ footer {
 
 }
 
+#HiddenOpsBox {
+	display: none;
+}
+
 #OperationsBox {
 	width: 33%;
 	background-color: rgb(220, 220, 220);
 	display: inline-flex;
 	flex-direction: column;
  	align-items: center;
-
 }
 
 #OperationsBox h2 {
 	color: rgb(0, 132, 3);
+	font-size: 2vw;
 }
 
 #OperationsBox img {
@@ -408,14 +419,14 @@ footer {
 #BookAppointmentContainer input {
 	margin: 10px;
 	padding: 10px;
-	width: 400px;
+	width: 80%;
 	height: 60px;
 }
 
 #BookAppointmentContainer textarea {
 	margin: 10px;
 	padding: 10px;
-	width: 400px;
+	width: 80%;
 	height: 200px;
 }
 
@@ -425,9 +436,7 @@ footer {
 
 #BookAppointmentContainer h2 {
 	color: rgb(0, 132, 3);
-}
-
-#BookAppointmentContainer h2 {
+	font-size: 2vw;
 	float: right;
 }
 
@@ -446,6 +455,7 @@ footer {
 
 #AppointmentHoursBox h2 {
 	color: rgb(0, 132, 3);
+	font-size: 2vw;
 }
 
 
@@ -457,6 +467,7 @@ footer {
 	margin-bottom: 5px;
 	background-color: rgb(220, 220, 220);
 	padding-bottom: 10px;
+	margin-top: 10px;
 }
 
 .blogPosts {
@@ -467,14 +478,16 @@ footer {
 	align-items: center;
 	background-color: white;
 	margin-bottom: 5px;
+	border-radius: 30px;
 }
 
 .blogPosts img {
-	width: 100%;
+	width: 90%;
+	border-radius: 50%;
 }
 
 .blogPosts p {
-	width: 100%;
+	width: 50%;
 	text-align: center;
 }
 
@@ -484,6 +497,7 @@ footer {
     padding: 10px;
     transition-property: background-color, color;
 	transition-duration: 1s;
+	border-radius: 60px;
 }
 
 .articleLink:hover {
@@ -506,6 +520,7 @@ footer {
     text-decoration: none;
     transition-property: background-color, color;
 	transition-duration: 1s;
+	border-radius: 60px;
 }
 
 #loadMoreButton:hover {
@@ -697,7 +712,7 @@ textarea
 
 @media (max-width:1196px)
 {
-	.carousel, .item, .active{height:62vh;}
+	.carousel, .item, .active{width:100%; height:550px;}
 	
 
 }
@@ -805,8 +820,35 @@ textarea
 	{
 		font-size:9px
 	}
+ 	.book{margin-bottom: 70px;}
+}
 
-	.book{margin-bottom: 70px;}
+@media screen and (max-width: 755px)
+{
+ 	.textFlex b{font-size:3vw; text-align: center; margin-top:30px}
+	.textFlex p{font-size:2.5vw; text-align: center; margin-top:30px}
+	.book b{font-size:3.5vw}
+	form
+	{
+		margin-right:15px
+	}
+
+	input
+	{
+		
+		height:60px;
+		font-size: 1em;
+		width:25vw
+	}
+
+	.textFlex b{ text-align: center}
+
+	 textarea
+	{
+		font-size:1em;
+		height:110px;
+		width:25vw;
+	}
 }
 
 #buttonBox {
@@ -904,40 +946,83 @@ textarea
 }
 
 
-@media screen and (max-width: 755px)
-{
 
-	.textFlex b{font-size:3vw; text-align: center; margin-top:30px}
-	.textFlex p{font-size:2.5vw; text-align: center; margin-top:30px}
-	.book b{font-size:3.5vw}
-
-form
-{
-	margin-right:15px
-}
-input
-{
-	
-	height:60px;
-	font-size: 1em;
-	width:25vw
-}
-.textFlex b{ text-align: center}
-
-textarea
-{
-	font-size:1em;
-	height:110px;
-	width:25vw;
-}
-
-}
 
 @media screen and (max-width: 1000px) {
+	.submit{font-size:3vw; width:20vw}
+
+	.blogPosts {
+		width: 49%;
+	}
+
+	#ContactUsBar div {
+		height: 40px;
+		width: 70%;
+		display: table;
+	}
+
+	#CenteringContainer {
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	#BookAppointmentContainer h2 {
+		font-size: 1.5em;
+	}
+
+	#AppointmentHoursBox h2 {
+		font-size: 1.5em;
+	}
+
+	#BookAppointmentContainer {
+		width: 100%;
+	}
+
+	#AppointmentHoursBox {
+		width: 100%;
+	}
+
+	#HiddenOpsBox {
+		width: 100%;
+		background-color: rgb(220, 220, 220);
+		display: inline-flex;
+		flex-direction: column;
+	 	align-items: center;
+	}
+
+	#HiddenOpsBox h2 {
+		color: rgb(0, 132, 3);
+		font-size: 1.5em;
+	}
+
+	#HiddenOpsBox img {
+		width: 80%;
+	}
+
+	#OperationsBox {
+		display: none;
+	}
+
+	#CUEmail {
+		font-size: 1em;
+	}
+
+	#CUPhone {
+		font-size: 1.5em;
+	}
+
+	#CUSocial {
+		font-size: 1em;
+	}
+
+	#ContactUsBar {
+	 	flex-direction: column;
+	}
+
 	nav {
 		display: none;
 	}
-	.submit{font-size:3vw; width:20vw}
+	
 	.navbar-nav li {
 		float: none;
 	}
@@ -987,6 +1072,10 @@ textarea
 }
 
 @media screen and (max-width: 630px) {
+
+	.blogPosts {
+		width: 99%;
+	}
 
 	#LogoContainer {
 		display: flex;

@@ -55,7 +55,17 @@ header {
 	height: 100px;
 }
 
-.carousel-inner, .item, .active{height:50vw; width:98vw;}
+.carousel-inner, .item, .active{
+	height:50vw; 
+	width:98vw;
+	border-radius: 60px;
+	background-color: white;
+	}
+	
+.carousel-control {
+	border-radius: 60px;
+}
+	
 .container{
 	width:100%;
 	padding: 0px;
@@ -316,9 +326,6 @@ footer {
 	margin: auto;
 }
 
-#SelectionContainer {
-	border: 2px rgb(0, 132, 3) solid;
-}
 
 
 

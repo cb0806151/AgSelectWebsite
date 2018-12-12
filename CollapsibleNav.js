@@ -97,6 +97,7 @@
 			} else {
 				if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 65.5) {
 					if (navigator.userAgent.indexOf("Chrome") != -1) {
+						document.getElementById("buttonBox").style.justifyContent = "flex-end";
 						document.getElementsByClassName("navbar-toggle")[0].style.marginTop = "-80px";
 					} else {
 						document.getElementById("buttonBox").style.justifyContent = "flex-end";

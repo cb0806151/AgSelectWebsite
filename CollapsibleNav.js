@@ -25,7 +25,6 @@
 				document.getElementById("ContactUsBox").style.bottom = "0px";
 				document.getElementById("ContactUsBox").style.marginTop = "-15px";
 				document.getElementById("ContactUsBox").style.height = "50px";
-				document.getElementById("BookAppointment").style.padding = "7px";
 				document.getElementById("navbar").style.height = "80px";
 				document.getElementById("buttonBox").style.height = "50px"
 				document.getElementById("buttonBox").style.marginTop = "-15px";
@@ -63,7 +62,6 @@
 				document.getElementById("ContactUsBox").style.bottom = "-0.3px";
 				document.getElementById("ContactUsBox").style.marginTop = "0px";
 				document.getElementById("ContactUsBox").style.height = "100px";
-				document.getElementById("BookAppointment").style.padding = "7px";
 				document.getElementById("navbar").style.height = "160px";
 				document.getElementsByTagName("NAV")[0].style.marginTop = "0px";
 				document.getElementById("buttonBox").style.height = "100px"

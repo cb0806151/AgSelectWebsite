@@ -1,70 +1,62 @@
 body {
-	background-color: none;
-	padding: 0px;
-	margin: 0px;
+  background-color: none;
+  padding: 0px;
+  margin: 0px;
 }
 
-#thank
-{
-	background-image: url(images/giphy.gif);
-	background-size:100% 100%;
-	
-	
+#thank {
+  background-image: url(images/giphy.gif);
+  background-size: 100% 100%;
 }
 
-#thank a
-{
-	text-decoration: none;
-	color:#337ab7
+#thank a {
+  text-decoration: none;
+  color: #337ab7
 }
 
-.thankcontainer
-{
-	font-size:50px;
-	text-align: center;
-	color:white
-	
+.thankcontainer {
+  font-size: 50px;
+  text-align: center;
+  color: white
 }
 
-.thankcontainer h2
-{
-	text-align: center;
-	margin-top:130px
+.thankcontainer h2 {
+  text-align: center;
+  margin-top: 130px
 }
 
 header {
-	background-color: white;
-	position: fixed;
-	z-index: 10;
-	top: 0px;
-	width: 100%;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
 }
 
-#ContactUsBox a:hover
-{
-	background-color:rgba(0,132,3,0.9);
-	transition-duration: .8s;
-	border-radius: 60px;
-	color:white
+#ContactUsBox a:hover {
+  background-color: rgba(0, 132, 3, 0.9);
+  transition-duration: .8s;
+  border-radius: 60px;
+  color: white
 }
 
 #LogoContainer {
-	display: inline-block;
-	text-align: center;
-	padding-left: 20px;
-	height: 100px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 20px;
+  height: 100px;
 }
 
 #LogoContainer i {
-	position: relative;
-	top: -13px;
+  position: relative;
+  top: -13px;
 }
 
 #logo {
-	max-height: 90px;
-	display: flex;
-	position:relative;
-	transition:1s
+  max-height: 90px;
+  display: flex;
+  position: relative;
+  transition: 1s
 }
 
 #navbar {
@@ -84,1167 +76,1144 @@ header {
   height: 160px;
 }
 
-.navBox{
-	position:relative;
-	transition: 1s;
-	height: 100px;
+.navBox {
+  position: relative;
+  transition: 1s;
+  height: 100px;
 }
 
-.carousel-inner, .item, .active{
-	height:50vw; 
-	width:98vw;
-	border-radius: 60px;
-	background-color: white;
-	}
-	
-.carousel-control {
-	border-radius: 60px;
+.carousel-inner, .item, .active {
+  height: 50vw;
+  width: 98vw;
+  border-radius: 60px;
+  background-color: white;
 }
-	
-.container{
-	width:100%;
-	padding: 0px;
-	margin-top: -70px;
+
+.carousel-control {
+  border-radius: 60px;
+}
+
+.container {
+  width: 100%;
+  padding: 0px;
+  margin-top: -70px;
 }
 
 .carousel-caption {
-	background-color: rgba(200, 200, 200, 0.5);
-	font-size: 30px;
-	
-}	
-
-
-nav {
-	display: inline-flex;
- 	justify-content: center;
- 	align-items: center;
-	transition-duration: 1s;
-	width: 45%;
-	float: right;
-	background-color: white;
-	padding-right: 20px;
-	padding-left: 20px;
+  background-color: rgba(200, 200, 200, 0.5);
+  font-size: 30px;
 }
 
-nav a 
-{
-	display: inline-flex;
-	justify-content: center;
- 	align-items: center;
-	text-align: center;
-	transition-property: background-color, color;
-	transition-duration: 1s;
-	border-radius: 60px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-right: 15px;
+nav {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1s;
+  width: 45%;
+  float: right;
+  background-color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+nav a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  border-radius: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 15px;
 }
 
 nav a:hover {
-	background-color: rgb(0, 132, 3);
-	color: white;
+  background-color: rgb(0, 132, 3);
+  color: white;
 }
 
 nav a p {
-	padding: 1px;
+  padding: 1px;
 }
 
 #SelectedNav {
-	background-color: rgb(0, 132, 3);
-	color: white;
+  background-color: rgb(0, 132, 3);
+  color: white;
 }
 
 #ContactUsBox {
-	display: inline-flex;
-	text-align: center;
-	flex-direction: column;
-	text-align: center;
-	position: relative;
-	line-height:20px;
-	float: right;
-	font-size:1.1em;
-	background-color: white;
-	border-style: solid;
-	border-width: 0px 0px 0px 2px;
-	border-color: lightgray;
-	padding-right: 20px;
-	padding-left: 20px;
-	transition: 0.9s;
-	bottom: "-0.3px";
-	height: 100px;
+  display: inline-flex;
+  text-align: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  line-height: 20px;
+  float: right;
+  font-size: 1.1em;
+  background-color: white;
+  border-style: solid;
+  border-width: 0px 0px 0px 2px;
+  border-color: lightgray;
+  padding-right: 20px;
+  padding-left: 20px;
+  transition: 0.9s;
+  bottom: "-0.3px";
+  height: 100px;
 }
 
 #ContactUsBox p {
-	padding: 5px;
-	margin: 0px;
-	margin-top: 4px;
+  padding: 5px;
+  margin: 0px;
+  margin-top: 4px;
 }
 
 #BookAppointment {
-	position: relative;
-	text-align: center;
-	width: 100%;
-	margin-top: 4px;
-	padding: 7px;
-	padding-left: 20px;
-	padding-right: 20px;
-	
-	color: #337ab7;
-	border-radius: 60px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 4px;
+  padding: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #337ab7;
+  border-radius: 60px;
 }
 
 #BookAppointment:hover {
-	background-color: rgb(0, 132, 3);
-	color: white;
-	text-decoration: underline;
+  background-color: rgb(0, 132, 3);
+  color: white;
+  text-decoration: underline;
 }
 
-
-
-
 #page-container {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-	margin-top:160px
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px
 }
 
 #content-wrap {
-	padding-bottom: 330px;
-	top: 0px;
+  padding-bottom: 330px;
+  top: 0px;
 }
 
-.bodyText
-{
-	font-size:3.3em;
-	text-align:center;
-	margin:60px 0px 60px 0px;
-	
+.bodyText {
+  font-size: 3.3em;
+  text-align: center;
+  margin: 60px 0px 60px 0px;
 }
 
-.book{margin:80px 0px 35px 0px; display:flex; justify-content:center}
-textarea
-{
-	resize:none;
-	margin:0px 0px 10px 10px;
-	font-size:1.85em;
-	border:2px solid lightgray;
-	border-radius: 10px;
-	width:45vw;
-	overflow: hidden;
-}
-.textFlex
-{
-	display:flex;
-	flex-direction: column;
-}
- .textFlex p
-{
-	font-size: 1.8em;
-	text-align: center
-}
- .book b{font-size:1.7em; color:rgb(0, 132, 3)}
-.inputHeader
-{
-	font-size:3.2em;
-	font-weight: bold;
-	text-align: center;
-}
- .inputText
-{
-	font-size:2em;
-	margin-top:60px;
-	font-weight: bold;
-	text-align: center
-}
-.book form
-{
-	margin-right:45px
+.book {
+  margin: 80px 0px 35px 0px;
+  display: flex;
+  justify-content: center
 }
 
-.textFlex b{font-size:2.2em; text-align: center; margin-top:30px}
-input
-{
-	margin:0px 0px 10px 10px;
-	font-size:1.85em;
-	height:60px;
-	border:2px solid lightgray;
-	border-radius: 10px;
-	width:45vw
-}
-input:hover
-{
-	background-color:rgba(214, 206, 206, 0.3)
-}
-textarea:hover{background-color:rgba(214, 206, 206, 0.3)}
-.submit
-{
-	height:80px;
-	font-size:2.5vw;
-	background-color:rgb(0, 132, 3);
-	color:white;
-	position: relative;
-	
-	width:35%;
-}
- .submit:hover
-{
-	background-color:rgba(0,132,3,0.9);
+textarea {
+  resize: none;
+  margin: 0px 0px 10px 10px;
+  font-size: 1.85em;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  width: 45vw;
+  overflow: hidden;
 }
 
+.textFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+.textFlex p {
+  font-size: 1.8em;
+  text-align: center
+}
+
+.book b {
+  font-size: 1.7em;
+  color: rgb(0, 132, 3)
+}
+
+.inputHeader {
+  font-size: 3.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inputText {
+  font-size: 2em;
+  margin-top: 60px;
+  font-weight: bold;
+  text-align: center
+}
+
+.book form {
+  margin-right: 45px
+}
+
+.textFlex b {
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 30px
+}
+
+input {
+  margin: 0px 0px 10px 10px;
+  font-size: 1.85em;
+  height: 60px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  width: 45vw
+}
+
+input:hover {
+  background-color: rgba(214, 206, 206, 0.3)
+}
+
+textarea:hover {
+  background-color: rgba(214, 206, 206, 0.3)
+}
+
+.submit {
+  height: 80px;
+  font-size: 2.5vw;
+  background-color: rgb(0, 132, 3);
+  color: white;
+  position: relative;
+  width: 35%;
+}
+
+.submit:hover {
+  background-color: rgba(0, 132, 3, 0.9);
+}
 
 footer {
-	background-color: white;
-	border:solid 2px rgb(0, 132, 3);;
-	border-radius: 60px 60px 0px 0px;
-	border-bottom: white 2px solid;
-	color: black;
-	position: absolute;
-	margin-top:0px;
-	width: 100%;
-	bottom: 0vh;
+  background-color: white;
+  border: solid 2px rgb(0, 132, 3);
+  ;
+  border-radius: 60px 60px 0px 0px;
+  border-bottom: white 2px solid;
+  color: black;
+  position: absolute;
+  margin-top: 0px;
+  width: 100%;
+  bottom: 0vh;
 }
 
 #FooterInfo {
-	display: flex;
-	justify-content: center;
- 	align-items: center;
- 	flex-direction: column;
-	width: 100%;
-	float: right;
-	margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  float: right;
+  margin-bottom: 10px;
 }
 
 #FooterInfo p {
-	display: flex;
-	justify-content: center;
- 	align-items: center;
- 	border: 2px solid rgb(0, 132, 3);
-	border-radius: 60px;
- 	background-color: white;
-	margin-top: 10px;
-	margin-bottom: 0px;
-	padding: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
-	color: #337ab7;
-	transition-property: background-color, color;
-	transition-duration: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 132, 3);
+  border-radius: 60px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #337ab7;
+  transition-property: background-color, color;
+  transition-duration: 1s;
 }
 
 #FooterInfo p:hover {
-	background-color: rgb(0, 132, 3);
-	color: white;
-	text-decoration: underline;
+  background-color: rgb(0, 132, 3);
+  color: white;
+  text-decoration: underline;
 }
 
 #ParentCompanyLogoContainer {
-	text-align: center;
-	display: block;
-	width: 100%;
+  text-align: center;
+  display: block;
+  width: 100%;
 }
 
 #ParentCompanyLogoContainer a {
-	text-decoration: none;
-	display: block;
-	left: -10px;
+  text-decoration: none;
+  display: block;
+  left: -10px;
 }
 
 #ParentCompanyLogoContainer p {
-	margin: 0px;
-	display: block;
-	margin-top: 3px;
+  margin: 0px;
+  display: block;
+  margin-top: 3px;
 }
 
 #ParentCompanyLogo {
-	width: 150px;
-	display: block;
-	margin: auto;
+  width: 150px;
+  display: block;
+  margin: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #ContactUsBar {
-	width: 100%;
-	background-color: rgb(220, 220, 220);
-	display: inline-flex;
-	justify-content: center;
- 	align-items: center;
- 	flex-direction: row;
+  width: 100%;
+  background-color: rgb(220, 220, 220);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 #ContactUsBar div {
-	margin: 5px;
-	background-color: white;
-	height: 80px;
-	display: flex;
-	justify-content: center;
- 	align-items: center;
- 	text-align: center;
- 	padding: 20px;
- 	border-radius: 60px;
+  margin: 5px;
+  background-color: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 60px;
 }
 
 #CUPhone {
-	width: 30%;
-	font-size: 3vw;
+  width: 30%;
+  font-size: 3vw;
 }
 
 #CUEmail {
-	width: 40%;
-	font-size: 2vw;
+  width: 40%;
+  font-size: 2vw;
 }
 
 #CUSocial {
-	width: 12%;
-	font-size: 1vw;
+  width: 12%;
+  font-size: 1vw;
 }
 
 #CUSocial i {
-	transform: scale(3);
-	margin: 15px;
-	width: 25%;
+  transform: scale(3);
+  margin: 15px;
+  width: 25%;
 }
 
 #CenteringContainer {
-	width: 100%;
-	background-color: rgb(220, 220, 220);
-	display: inline-flex;
- 	align-items: center;
-	margin-bottom: 20px;
-
+  width: 100%;
+  background-color: rgb(220, 220, 220);
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 #HiddenOpsBox {
-	display: none;
+  display: none;
 }
 
 #OperationsBox {
-	width: 33%;
-	background-color: rgb(220, 220, 220);
-	display: inline-flex;
-	flex-direction: column;
- 	align-items: center;
+  width: 33%;
+  background-color: rgb(220, 220, 220);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #OperationsBox h2 {
-	color: rgb(0, 132, 3);
-	font-size: 2vw;
+  color: rgb(0, 132, 3);
+  font-size: 2vw;
 }
 
 #OperationsBox img {
-	width: 80%;
+  width: 80%;
 }
 
 .greenType {
-	background-color:rgb(0, 132, 3);
-	color:white;
-	position: relative;
-	width:35%;
+  background-color: rgb(0, 132, 3);
+  color: white;
+  position: relative;
+  width: 35%;
 }
 
-.greenType:hover
-{
-	background-color:rgba(0,132,3,0.9);
+.greenType:hover {
+  background-color: rgba(0, 132, 3, 0.9);
 }
 
 #BookAppointmentContainer {
-	width: 33%;
-	background-color: rgb(220, 220, 220);
-	display: flex;
-	flex-direction: column;
- 	align-items: center;
- 	justify-content: center;
+  width: 33%;
+  background-color: rgb(220, 220, 220);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #BookAppointmentContainer form {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
- 	align-items: center;
- 	justify-content: center;
- 	margin-right: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px;
 }
 
 #BookAppointmentContainer form input {
-	margin: 10px;
-	padding: 10px;
-	width: 80%;
-	height: 60px;
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  height: 60px;
 }
 
 #BookAppointmentContainer form textarea {
-	margin: 10px;
-	padding: 10px;
-	width: 80%;
-	height: 200px;
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  height: 200px;
 }
 
 #BookAppointmentContainer p {
-	color: rgb(0, 132, 3);
+  color: rgb(0, 132, 3);
 }
 
 #BookAppointmentContainer h2 {
-	color: rgb(0, 132, 3);
-	font-size: 2vw;
-	float: right;
+  color: rgb(0, 132, 3);
+  font-size: 2vw;
+  float: right;
 }
 
 #AppointmentHoursBox {
-	width: 33%;
-	background-color: rgb(220, 220, 220);
-	display: inline-flex;
-	flex-direction: column;
- 	align-items: center;
-
+  width: 33%;
+  background-color: rgb(220, 220, 220);
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #AppointmentHoursBox p {
-	color: rgb(0, 132, 3);
+  color: rgb(0, 132, 3);
 }
 
 #AppointmentHoursBox h2 {
-	color: rgb(0, 132, 3);
-	font-size: 2vw;
+  color: rgb(0, 132, 3);
+  font-size: 2vw;
 }
 
-
-
-
-
 #blogBlock {
-	text-align: center;
-	margin-bottom: 5px;
-	background-color: rgb(220, 220, 220);
-	padding-bottom: 10px;
-	margin-top: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: rgb(220, 220, 220);
+  padding-bottom: 10px;
+  margin-top: 10px;
 }
 
 .blogPosts {
-	width: 33%;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
-	margin-bottom: 5px;
-	border-radius: 30px;
+  width: 33%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 5px;
+  border-radius: 30px;
 }
 
 .blogPosts img {
-	width: 90%;
-	border-radius: 50%;
+  width: 90%;
+  border-radius: 50%;
 }
 
 .blogPosts p {
-	width: 50%;
-	text-align: center;
+  width: 50%;
+  text-align: center;
 }
 
 .articleLink {
-	color: #337ab7;
-    text-decoration: none;
-    padding: 10px;
-    transition-property: background-color, color;
-	transition-duration: 1s;
-	border-radius: 60px;
+  color: #337ab7;
+  text-decoration: none;
+  padding: 10px;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  border-radius: 60px;
 }
 
 .articleLink:hover {
-	color: white;
-	text-decoration: underline;
-	background-color: rgb(0, 132, 3);
-	padding: 10px;
+  color: white;
+  text-decoration: underline;
+  background-color: rgb(0, 132, 3);
+  padding: 10px;
 }
 
 #loadMoreButton {
-	width: 99.5%;
-	height: 80px;
-	background-color: white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: auto;
-	text-align: center;
-	color: #337ab7;
-    text-decoration: none;
-    transition-property: background-color, color;
-	transition-duration: 1s;
-	border-radius: 60px;
+  width: 99.5%;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  color: #337ab7;
+  text-decoration: none;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  border-radius: 60px;
 }
 
 #loadMoreButton:hover {
-	color: white;
-	text-decoration: underline;
-	background-color: rgb(0, 132, 3);	
+  color: white;
+  text-decoration: underline;
+  background-color: rgb(0, 132, 3);
 }
 
-.productHeader
-{
-	font-size:3em;
-	margin-top:-165px;
-	background-image: url(images/fruits.jpg);
-	background-repeat: no-repeat;
-	background-size:100% 100%;
-	height:350px;
-	color:green;
-	text-align: center
+.productHeader {
+  font-size: 3em;
+  margin-top: -165px;
+  background-image: url(images/fruits.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+  color: green;
+  text-align: center
 }
 
-.productContainer
-{
-	border:2px rgb(0, 132, 3) solid; 
-	width:99%;
-	position: relative;
-	left:.5%;
-	margin-bottom: 7px;
-	margin-top:.455px;
-	border-radius: 45px;
-	background-color:rgba(247, 239, 239, 0.2)
+.productContainer {
+  border: 2px rgb(0, 132, 3) solid;
+  width: 99%;
+  position: relative;
+  left: .5%;
+  margin-bottom: 7px;
+  margin-top: .455px;
+  border-radius: 45px;
+  background-color: rgba(247, 239, 239, 0.2)
 }
 
-#pHead
-{
-	text-align: center
-}
-.productContainer h1{font-size:2.7em; color: rgb(0, 132, 3);}
-.productHorz
-{
-	display:flex;
-	
-	
+#pHead {
+  text-align: center
 }
 
-.productHorz div
-{
-	margin-right:40px
+.productContainer h1 {
+  font-size: 2.7em;
+  color: rgb(0, 132, 3);
 }
 
-.productVert
-{
-	display:flex;
-	flex-direction: column;
-	
-	
-	
-}
-.productVert b{text-align: center; color:rgb(0, 132, 3); margin-top:30px;font-size:2.6em}
-.productVert p
-{
-	font-size:2em;
-	text-align: center
+.productHorz {
+  display: flex;
 }
 
-.productHorz img
-{
-	min-width:350px;
-	margin-right:25px;
-	margin-top:25px;
-	max-height:250px;
-	border-radius: 50%;
-	border:3.5px rgb(0, 132, 3) groove
+.productHorz div {
+  margin-right: 40px
 }
 
-	.navbar-toggle {
-		display: none;
-	}
-
-	#buttonBox {
-		display: none;
-	}
-
-@media screen and (max-width: 1741px)
-{
-	.productHorz img
-	{
-		min-width: 300px;
-		max-height:200px;
-	}
-
-	.productVert p
-	{
-		font-size:1.5em	
-	}
-
-	.productVert b
-	{
-		font-size:1.8em;
-	}
+.productVert {
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-
-@media screen and (max-width: 1490px)
-{
-
-	.productVert p
-	{
-		font-size:1.3em;
-	}
-
-	.productVert b
-	{
-		font-size:1.5em;
-	}
-
-	
-	.item,.active{height:50vw;}
-	
-
+.productVert b {
+  text-align: center;
+  color: rgb(0, 132, 3);
+  margin-top: 30px;
+  font-size: 2.6em
 }
 
-
-
-
-
-
-
-@media screen and (max-width: 1291px)
-{
-
-	#pHead
-	{
-		text-align: center;
-		position: relative;
-		right:5.5%
-	}
-
-
-	.productVert p
-	{
-		font-size:1.5em	
-	}
-
-	.productVert b
-	{
-		font-size:1.8em;
-	}
-
-	.productHorz
-	{
-		flex-direction: column;
-		position: relative;
-		
-		align-items: center
-	}
-
-	.item, .active{height:50vw;}
-.container{
-	width:100%;
-	padding: 0px;
-	margin-top: -70px;
+.productVert p {
+  font-size: 2em;
+  text-align: center
 }
 
-.carousel-caption {
-	background-color: rgba(200, 200, 200, 0.5);
-	font-size: 20px;
-	
-}
-
-
-form
-{
-	margin-right:30px
-}
-input
-{
-	font-size:1.3em;
-	height:60px;
-	width:37vw
-}
-.textFlex b{font-size:1.7em; text-align: center}
-textarea
-{
-	font-size:1.3em;
-	height:125px;
-	width:37vw;
-}
-
-
-
-	
-}
-
-
-@media (max-width:1196px)
-{
-	.carousel, .item, .active{ height:50vw;}
-	.submit{height:70px; width:260px; margin-bottom:30px; left:-400px; top:50px}
-	.book
-	{
-		flex-direction: column;
-		
-		align-items: center;
-		justify-content: space-around;
-
-	}
-	input{width:500px}
-	.book form{position: relative; left:15%}
-	.book textarea{width:500px}
-
-	form b
-	{
-		position: relative; left:15%
-	}
-	
-
-}
-
-
-@media (max-width:1196px) and (min-width: 1141px)
-{
-	.book form{position: relative; left:12%}
-}
-
-
-@media (max-width:822px) and (min-width: 517px)
-{
-	.productHorz
-	{
-		left:1%
-	}
-}
-
-
-@media (max-width:845px)
-{
-	.submit{position: relative; left:15%;top:3px; margin-bottom: 0px}
-}
-
-
-
-@media screen and (max-width: 903px)
-{
-	
-.container{
-	width:100%;
-	padding: 0px;
-	margin-top: 0px;
-}
-
-.carousel-caption {
-	background-color: rgba(200, 200, 200, 0.5);
-	font-size: 17px;
-	
-}	
-
-form
-{
-	margin-right:25px
-}
-input
-{
-	
-	height:60px;
-	
-}
-.textFlex b{ text-align: center}
-
-textarea
-{
-	font-size:1.3em;
-	height:125px;
-	
-}
-
-}
-
-
-
-@media (max-width:670px)
-{
-	.book .submit{height:70px; width:250px; margin-bottom:30px; left:60px; top:7px}
-
-	.book input{width:400px}
-	.book form{position: relative; left:15%}
-	.book textarea{width:400px}
-
-}
-
-
-
-@media (max-width:533px)
-{
-	.book .submit{height:70px; width:50vw; margin-bottom:30px; left:47px; top:7px}
-	.book input{width:75vw}
-	.book form{position: relative; left:55px}
-	.book textarea{width:75vw}
-	form b {left:21%}
-
-}
-
-
-
-
-@media screen and (max-width:620px)
-{
-	.container{margin-top:0px;}
-	.item,.active{height:280px;}
-	.carousel-caption
-	{
-		font-size:13px
-	}
-
-}
-
-@media (max-width: 516px)
-{
-
-	#pHead
-	{
-		position: relative;
-		left:1%
-	}
-	.productHorz
-	{
-		position: relative;
-		left:4.65%
-	}
-
-		.productHorz img
-	{
-		width: 150px;
-		height:175px;
-	}
-
-	.productVert p
-	{
-		font-size:1.4em;
-
-
-	}
-
-	.productVert p, .productVert b 
-	{
-		position: relative;
-		left:5%;
-	}
-	.productVert b
-	{
-		font-size:1.7em;
-	}
-
-	
-	.item,.active{height:250px;}
-	.carousel-caption
-	{
-		font-size:9px
-	}
-
-
-}
-
-@media (max-width:560px)
-{
-	
-	.item,.active{height:50vw;}
-	.carousel-caption
-	{
-		font-size:9px
-	}
-}
-
-@media (max-width:469px)
-{
-	.item,.active{height:50vw}
-	.carousel-caption
-	{
-		font-size:9px
-	}
- 	.book{margin-bottom: 70px;}
-}
-
-@media screen and (max-width: 755px)
-{
- 	.textFlex b{font-size:3vw; text-align: center; margin-top:30px}
-	.textFlex p{font-size:2.5vw; text-align: center; margin-top:30px}
-	.book b{font-size:3.5vw}
-	.book form
-	{
-		margin-right:15px
-	}
-
-
-
-	.textFlex b{ text-align: center}
-
-}
-
-#buttonBox {
-	display: none;
+.productHorz img {
+  min-width: 350px;
+  margin-right: 25px;
+  margin-top: 25px;
+  max-height: 250px;
+  border-radius: 50%;
+  border: 3.5px rgb(0, 132, 3) groove
 }
 
 .navbar-toggle {
-	margin: 0px;
-	display: none;
+  display: none;
+}
+
+#buttonBox {
+  display: none;
+}
+
+@media screen and (max-width: 1741px) {
+  .productHorz img {
+    min-width: 300px;
+    max-height: 200px;
+  }
+
+  .productVert p {
+    font-size: 1.5em
+  }
+
+  .productVert b {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  .productVert p {
+    font-size: 1.3em;
+  }
+
+  .productVert b {
+    font-size: 1.5em;
+  }
+
+  .item, .active {
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 1291px) {
+  #pHead {
+    text-align: center;
+    position: relative;
+    right: 5.5%
+  }
+
+  .productVert p {
+    font-size: 1.5em
+  }
+
+  .productVert b {
+    font-size: 1.8em;
+  }
+
+  .productHorz {
+    flex-direction: column;
+    position: relative;
+    align-items: center
+  }
+
+  .item, .active {
+    height: 50vw;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0px;
+    margin-top: -70px;
+  }
+
+  .carousel-caption {
+    background-color: rgba(200, 200, 200, 0.5);
+    font-size: 20px;
+  }
+
+  form {
+    margin-right: 30px
+  }
+
+  input {
+    font-size: 1.3em;
+    height: 60px;
+    width: 37vw
+  }
+
+  .textFlex b {
+    font-size: 1.7em;
+    text-align: center
+  }
+
+  textarea {
+    font-size: 1.3em;
+    height: 125px;
+    width: 37vw;
+  }
+}
+
+@media (max-width:1196px) {
+  .carousel, .item, .active {
+    height: 50vw;
+  }
+
+  .submit {
+    height: 70px;
+    width: 260px;
+    margin-bottom: 30px;
+    left: -400px;
+    top: 50px
+  }
+
+  .book {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  input {
+    width: 500px
+  }
+
+  .book form {
+    position: relative;
+    left: 15%
+  }
+
+  .book textarea {
+    width: 500px
+  }
+
+  form b {
+    position: relative;
+    left: 15%
+  }
+}
+
+@media (max-width:1196px) and (min-width: 1141px) {
+  .book form {
+    position: relative;
+    left: 12%
+  }
+}
+
+@media (max-width:822px) and (min-width: 517px) {
+  .productHorz {
+    left: 1%
+  }
+}
+
+@media (max-width:845px) {
+  .submit {
+    position: relative;
+    left: 15%;
+    top: 3px;
+    margin-bottom: 0px
+  }
+}
+
+@media screen and (max-width: 903px) {
+  .container {
+    width: 100%;
+    padding: 0px;
+    margin-top: 0px;
+  }
+
+  .carousel-caption {
+    background-color: rgba(200, 200, 200, 0.5);
+    font-size: 17px;
+  }
+
+  form {
+    margin-right: 25px
+  }
+
+  input {
+    height: 60px;
+  }
+
+  .textFlex b {
+    text-align: center
+  }
+
+  textarea {
+    font-size: 1.3em;
+    height: 125px;
+  }
+}
+
+@media (max-width:670px) {
+  .book .submit {
+    height: 70px;
+    width: 250px;
+    margin-bottom: 30px;
+    left: 60px;
+    top: 7px
+  }
+
+  .book input {
+    width: 400px
+  }
+
+  .book form {
+    position: relative;
+    left: 15%
+  }
+
+  .book textarea {
+    width: 400px
+  }
+}
+
+@media (max-width:533px) {
+  .book .submit {
+    height: 70px;
+    width: 50vw;
+    margin-bottom: 30px;
+    left: 47px;
+    top: 7px
+  }
+
+  .book input {
+    width: 75vw
+  }
+
+  .book form {
+    position: relative;
+    left: 55px
+  }
+
+  .book textarea {
+    width: 75vw
+  }
+
+  form b {
+    left: 21%
+  }
+}
+
+@media screen and (max-width:620px) {
+  .container {
+    margin-top: 0px;
+  }
+
+  .item, .active {
+    height: 280px;
+  }
+
+  .carousel-caption {
+    font-size: 13px
+  }
+}
+
+@media (max-width: 516px) {
+  #pHead {
+    position: relative;
+    left: 1%
+  }
+
+  .productHorz {
+    position: relative;
+    left: 4.65%
+  }
+
+  .productHorz img {
+    width: 150px;
+    height: 175px;
+  }
+
+  .productVert p {
+    font-size: 1.4em;
+  }
+
+  .productVert p, .productVert b {
+    position: relative;
+    left: 5%;
+  }
+
+  .productVert b {
+    font-size: 1.7em;
+  }
+
+  .item, .active {
+    height: 250px;
+  }
+
+  .carousel-caption {
+    font-size: 9px
+  }
+}
+
+@media (max-width:560px) {
+  .item, .active {
+    height: 50vw;
+  }
+
+  .carousel-caption {
+    font-size: 9px
+  }
+}
+
+@media (max-width:469px) {
+  .item, .active {
+    height: 50vw
+  }
+
+  .carousel-caption {
+    font-size: 9px
+  }
+
+  .book {
+    margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .textFlex b {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 30px
+  }
+
+  .textFlex p {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-top: 30px
+  }
+
+  .book b {
+    font-size: 3.5vw
+  }
+
+  .book form {
+    margin-right: 15px
+  }
+
+  .textFlex b {
+    text-align: center
+  }
+}
+
+#buttonBox {
+  display: none;
+}
+
+.navbar-toggle {
+  margin: 0px;
+  display: none;
 }
 
 .navbar-nav {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .navbar-collapse {
-	width: 100%;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .navbar-nav li {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
 }
 
 .navbar-nav li a {
-	display: flex;
-	justify-content: center;
- 	align-items: center;
- 	list-style-type: none;
- 	border: 2px solid white;
-	border-radius: 60px;
- 	background-color: rgb(0, 132, 3);
-	margin: 5px;
-	padding: 1px;
-	padding-left: 10px;
-	padding-right: 10px;
-	color: white;
-	transition-property: background-color, color;
-	transition-duration: 1s;
-	height: 30px;
-	width: 100%;
-	min-width: 200px;
-	max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  border: 2px solid white;
+  border-radius: 60px;
+  background-color: rgb(0, 132, 3);
+  margin: 5px;
+  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  height: 30px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
 }
 
 .navbar-nav li a:hover {
-	background-color: white;
-	color: rgb(0, 132, 3);
-	text-decoration: underline;
+  background-color: white;
+  color: rgb(0, 132, 3);
+  text-decoration: underline;
 }
 
 #SelectedDropdownNav {
-	background-color: white;
-	color: rgb(0, 132, 3);
-	text-decoration: underline;
+  background-color: white;
+  color: rgb(0, 132, 3);
+  text-decoration: underline;
 }
-
-
 
 @media (min-width: 768px) {
-	#page-container #content-wrap .navbar-collapse {
-		display: none !important;
-	}	
+  #page-container #content-wrap .navbar-collapse {
+    display: none !important;
+  }
 }
-
 
 @media (max-width: 1000px) and (min-width: 768px) {
-	#page-container #content-wrap .navbar-collapse {
-		display: none !important;
-		margin-right: -15px;
-		margin-left: -15px;
-	}
-	
-	#page-container #content-wrap .in {
-		display: block !important;
-	}
-	
-	#page-container #content-wrap .collapsing {
-		display: block !important;
-	}
+  #page-container #content-wrap .navbar-collapse {
+    display: none !important;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
 
-	.navbar-toggle {
-		margin-top: 0px;
-	}
-	
+  #page-container #content-wrap .in {
+    display: block !important;
+  }
+
+  #page-container #content-wrap .collapsing {
+    display: block !important;
+  }
+
+  .navbar-toggle {
+    margin-top: 0px;
+  }
 }
 
-
-
-
 @media screen and (max-width: 1000px) {
-	
+  .blogPosts {
+    width: 49%;
+  }
 
-	.blogPosts {
-		width: 49%;
-	}
+  #ContactUsBar div {
+    height: 40px;
+    width: 90%;
+    display: table;
+  }
 
-	#ContactUsBar div {
-		height: 40px;
-		width: 90%;
-		display: table;
-	}
+  #CenteringContainer {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
 
-	#CenteringContainer {
-		flex-direction: column;
-		margin-bottom: 50px;
-	}
+  #BookAppointmentContainer h2 {
+    font-size: 1.5em;
+  }
 
-	#BookAppointmentContainer h2 {
-		font-size: 1.5em;
-	}
+  #AppointmentHoursBox h2 {
+    font-size: 1.5em;
+  }
 
-	#AppointmentHoursBox h2 {
-		font-size: 1.5em;
-	}
+  #BookAppointmentContainer {
+    width: 100%;
+  }
 
-	#BookAppointmentContainer {
-		width: 100%;
-	}
+  #AppointmentHoursBox {
+    width: 100%;
+  }
 
-	#AppointmentHoursBox {
-		width: 100%;
-	}
+  #HiddenOpsBox {
+    width: 100%;
+    background-color: rgb(220, 220, 220);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-	#HiddenOpsBox {
-		width: 100%;
-		background-color: rgb(220, 220, 220);
-		display: inline-flex;
-		flex-direction: column;
-	 	align-items: center;
-	}
+  #HiddenOpsBox h2 {
+    color: rgb(0, 132, 3);
+    font-size: 1.5em;
+  }
 
-	#HiddenOpsBox h2 {
-		color: rgb(0, 132, 3);
-		font-size: 1.5em;
-	}
+  #HiddenOpsBox img {
+    width: 80%;
+  }
 
-	#HiddenOpsBox img {
-		width: 80%;
-	}
+  #OperationsBox {
+    display: none;
+  }
 
-	#OperationsBox {
-		display: none;
-	}
+  #CUEmail {
+    font-size: 1em;
+  }
 
-	#CUEmail {
-		font-size: 1em;
-	}
+  #CUPhone {
+    font-size: 1.5em;
+  }
 
-	#CUPhone {
-		font-size: 1.5em;
-	}
+  #CUSocial {
+    font-size: 1em;
+  }
 
-	#CUSocial {
-		font-size: 1em;
-	}
+  #ContactUsBar {
+    flex-direction: column;
+    margin-top: 70px;
+  }
 
-	#ContactUsBar {
-	 	flex-direction: column;
-		margin-top: 70px;
-	}
+  nav {
+    display: none;
+  }
 
-	nav {
-		display: none;
-	}
-	
-	.navbar-nav li {
-		float: none;
-	}
-	
-	.navbar-nav {
-		float: none;
-		padding: 0px;
-		background-color: rgb(0, 132, 3);
-		width: 84%;
-		margin: auto;
-		border-radius: 30px;
-	}
-	
-	.navbar-toggle {
-		display: flex;
-		flex-direction: column;
-		background-color: white;
-		position: fixed;
-		border: 1px solid rgb(0, 132, 3);
-		margin-top: 0px;
-	}
+  .navbar-nav li {
+    float: none;
+  }
 
-	#buttonBox {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		transition: margin-top 1s, height 1s;
-		width: 70px;
-		height: 100px;
-		float: right;
-	}
+  .navbar-nav {
+    float: none;
+    padding: 0px;
+    background-color: rgb(0, 132, 3);
+    width: 84%;
+    margin: auto;
+    border-radius: 30px;
+  }
 
-	.icon-bar {
-		background-color: rgb(0, 132, 3);
-	}
-	
-	.navbar-collapse {
-		position: fixed;
-		z-index: 100;
-		transition: margin-top 1s, height .35s ease;
-		margin-top: 0px;
-		width: 100vw;
-		right: 0px;
-		margin-left: 0px;
-	}
+  .navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    border: 1px solid rgb(0, 132, 3);
+    margin-top: 0px;
+  }
 
+  #buttonBox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: margin-top 1s, height 1s;
+    width: 70px;
+    height: 100px;
+    float: right;
+  }
+
+  .icon-bar {
+    background-color: rgb(0, 132, 3);
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    z-index: 100;
+    transition: margin-top 1s, height .35s ease;
+    margin-top: 0px;
+    width: 100vw;
+    right: 0px;
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 630px) {
+  .blogPosts {
+    width: 99%;
+  }
 
-	.blogPosts {
-		width: 99%;
-	}
+  #LogoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    margin-top: -20px;
+  }
 
-	#LogoContainer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0px;
-		width: 100%;
-		margin-top: -20px;
-	}
+  #logo {
+    z-index: 300;
+  }
 
-	#logo {
-		z-index: 300;
-	}
+  #ContactUsBox {
+    display: none;
+    width: 100%;
+    border: none;
+    padding: 0px;
+  }
 
-	#ContactUsBox {
-		display: none;
-		width: 100%;
-		border: none;
-		padding: 0px;
-	}
+  #buttonBox {
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+  }
 
-
-	#buttonBox {
-		width: 100%;
-		height: 80px;
-		justify-content: center;
-	}
-
-	#buttonBox .navbar-toggle {
-		margin-top: -35px;
-		transition: margin-top 1s
-		
-	}
-
+  #buttonBox .navbar-toggle {
+    margin-top: -35px;
+    transition: margin-top 1s
+  }
 }

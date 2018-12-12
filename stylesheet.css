@@ -84,6 +84,7 @@ header {
   height: 160px;
 }
 
+
 .navBox{
 	position:relative;
 	transition: 1s;
@@ -184,7 +185,7 @@ nav a:hover {
 	padding: 7px;
 	padding-left: 20px;
 	padding-right: 20px;
-	
+	transition: 1s;
 	color: #337ab7;
 	border-radius: 60px;
 }
@@ -257,7 +258,7 @@ textarea
 }
 .book form
 {
-	margin-right:45px
+	margin-right:10px
 }
 
 .textFlex b{font-size:2.2em; text-align: center; margin-top:30px}
@@ -267,6 +268,7 @@ input
 	font-size:1.85em;
 	height:60px;
 	border:2px solid lightgray;
+	transition: 1s;
 	border-radius: 10px;
 	width:45vw
 }
@@ -277,13 +279,13 @@ input:hover
 textarea:hover{background-color:rgba(214, 206, 206, 0.3)}
 .submit
 {
-	height:80px;
+	height:60px;
 	font-size:2.5vw;
 	background-color:rgb(0, 132, 3);
 	color:white;
 	position: relative;
-	
-	width:35%;
+	transition: 1s;
+	width:30%;
 }
  .submit:hover
 {
@@ -385,6 +387,8 @@ footer {
  	flex-direction: row;
 }
 
+#ContactUsBar a{color:rgba(78, 72, 72, 0.87); transition:1s}
+
 #ContactUsBar div {
 	margin: 5px;
 	background-color: white;
@@ -397,6 +401,7 @@ footer {
  	border-radius: 60px;
 }
 
+#ContactUsBar a:hover{color:gray}
 #CUPhone {
 	width: 30%;
 	font-size: 3vw;
@@ -752,6 +757,14 @@ textarea
 	width:37vw;
 }
 
+
+#BookAppointmentContainer #submit
+{
+	background-color:rgb(0, 132, 3);
+	color:white
+}
+
+#BookAppointmentContainer #submit:hover{background-color:rgba(0,132,3,0.9)}
 
 
 	
